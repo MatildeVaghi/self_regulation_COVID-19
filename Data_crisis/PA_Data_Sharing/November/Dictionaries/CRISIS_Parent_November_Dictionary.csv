@@ -1,0 +1,270 @@
+﻿Variable / Field Name,Form Name,Section Header,Field Type,Field Label,"Choices, Calculations, OR Slider Labels",Field Note,Text Validation Type OR Show Slider Number,Text Validation Min,Text Validation Max,Identifier?,Branching Logic (Show field only if...),Required Field?,Custom Alignment,Question Number (surveys only),Matrix Group Name,Matrix Ranking?,Field Annotation
+timestamp1,parentcaregiver_baseline_form,,text,,,,,,,,,,,,,,@NOW @HIDDEN
+age,parentcaregiver_baseline_form,,text,Your age (years):,,,number,,,y,,,,,,,
+childage,parentcaregiver_baseline_form,,text,Your child's age (years):,,,number,,,y,,,,,,,
+before,parentcaregiver_baseline_form,BACKGROUND,descriptive,"First, before we get started with the main questions, we would like to obtain some background information about your child.
+",,,,,,,,,,,,,
+relationship,parentcaregiver_baseline_form,,radio,What is your relationship to the child?,"1, Mother | 2, Father | 3, Grandparent | 4, Aunt/Uncle | 5, Foster Parent | 6, Other",,,,,,,,,,,,
+otherrelation,parentcaregiver_baseline_form,,text,Relation:,,,,,,,[relationship] = '6',,,,,,
+gender,parentcaregiver_baseline_form,,dropdown,Please specify your child's gender identity: ,"1, Boy | 2, Girl | 3, Non-binary | 4, Transgender boy | 5, Transgender girl | 6, Other",,,,,,,,,,,,
+gender_other,parentcaregiver_baseline_form,,text,Other:,,,,,,,[gender] = '6',,,,,,
+raceethnicity,parentcaregiver_baseline_form,,checkbox,"Which of these categories best describe your child? Please select all that apply.
+","1, White | 2, Black / African American | 3, Latino / Latina / Latinx or Hispanic | 4, American Indian or Alaska Native | 5, East Asian or Pacific Islander | 6, South or Southeast Asian | 7, Middle Eastern or North African | 8, Caribbean | 9, A race, ethnicity, or origin not listed",,,,,,,,,,,,
+raceethnicitydescribe,parentcaregiver_baseline_form,,text,"If a race, ethnicity, or origin not listed, please describe:",,,,,,,[raceethnicity(9)] = '1',,,,,,
+tall,parentcaregiver_baseline_form,,text,How tall is your child? ,,,number,,,,,,,,,,
+measurementheight,parentcaregiver_baseline_form,,radio,Measurement:,"1, Inches (in) | 2, Centimeters (cm)",,,,,,,,,,,,
+weight,parentcaregiver_baseline_form,,text,How much does your child weigh? ,,,number,,,,,,,,,,
+measurementweight,parentcaregiver_baseline_form,,radio,Measurement:,"1, Pounds (lbs) | 2, Kilograms (kg)",,,,,,,,,,,,
+healthconditions,parentcaregiver_baseline_form,,checkbox,Has a health or educational professional ever told you that your child had any of the following health conditions (check all that apply)? ,"1, Allergies | 2, Asthma or other lung problems | 3, Heart problems or hypertension | 4, Kidney problems | 5, Immune disorder | 6, Diabetes or high blood sugar | 7, Cancer | 8, Arthritis | 9, Frequent or very bad headaches | 10, Epilepsy or seizures | 11, Serious stomach or bowel problems | 12, Serious acne or skin problems | 13, Emotional or mental health problems such as Depression or Anxiety | 14, Problems with alcohol or drugs | 15, Intellectual disability | 16, Autism Spectrum Disorder | 17, Learning Disorder | 18, Other",,,,,,,,,,,,
+otherhealth,parentcaregiver_baseline_form,,text,Please specify:,,,,,,,[healthconditions(18)] = '1',,,,,,
+school,parentcaregiver_baseline_form,,checkbox,Is your child enrolled in school/college for the current academic year?,"1, Not in school | 2, Elementary school | 3, Junior high or Middle school | 4, High school | 5, College/Vocational school | 6, Graduate school",,,,,,,,,,,,
+location,parentcaregiver_baseline_form,,radio,Which best describes the area in which your child lives?,"1, Large city | 2, Suburbs of a large city | 3, Small city | 4, Town or village | 5, Rural area",,,,,,,,,,,,
+parenteducation,parentcaregiver_baseline_form,,radio,What is the highest level of education YOU completed?,"1, Some grade school | 2, Some high school | 3, High school diploma or GED | 4, Some college or 2-year degree | 5, 4-year college graduate | 6, Some school beyond college | 7, Graduate or professional degree (e.g., MA, MS, MBA, PhD, EdD, MD, DDS, JD, DVM)",,,,,,,,,,,,
+secondparenteducation,parentcaregiver_baseline_form,,radio,What is the highest level of education your child's second parent/caregiver completed?,"1, Some grade school | 2, Some high school | 3, High school diploma or GED | 4, Some college or 2-year degree | 5, 4-year college graduate | 6, Some school beyond college | 7, Graduate or professional degree (e.g., MA, MS, MBA, PhD, EdD, MD, DDS, JD, DVM) | 8, No second parent/caregiver",,,,,,,,,,,,
+working,parentcaregiver_baseline_form,,checkbox,Are YOU currently working or in school? (check all that apply),"1, Working full-time for pay | 2, Working part-time for pay | 3, Volunteer work | 4, On leave | 5, Laid off or lost a job | 6, Unemployed and looking for a job | 7, Unemployed and <u>not</u> looking for a job | 8, Retired | 9, Staying at home/homemaker | 10, Disabled | 11, Enrolled in school/college/university",,,,,,,,,,,,
+applyunemployment,parentcaregiver_baseline_form,,yesno,Did you file for unemployment benefits?,,,,,,,[working(4)] = '1' or [working(5)] = '1' or [working(6)] = '1' or [working(7)] = '1',,,,,,
+recieveunemployment,parentcaregiver_baseline_form,,yesno,Did you receive them?,,,,,,,[applyunemployment] = '1',,,,,,
+stillrecieveunemployment,parentcaregiver_baseline_form,,yesno,Are you still receiving them?,,,,,,,[recieveunemployment] = '1',,,,,,
+householdnumber,parentcaregiver_baseline_form,,text,How many people currently live in your child's home (excluding your child)? ,,,number,,,,,,,,,,
+householdcomp,parentcaregiver_baseline_form,,checkbox,Please specify their relationships to your child (check all that apply):,"1, One parent | 2, Two parents | 3, Grandparent(s) | 4, Siblings | 5, Other children | 6, Other relatives | 7, Unrelated person",,,,,,,,,,,,
+essentialworker,parentcaregiver_baseline_form,,yesno,"Is anyone in your child's household an ESSENTIAL WORKER (e.g., healthcare worker, first responder, delivery worker, store worker, security, building maintenance)? ",,,,,,,,,,,,,
+roomsinhouse,parentcaregiver_baseline_form,,text,How many rooms (<u>not</u> including bathrooms) are in your child's home?  ,,,number,,,,,,,,,,
+insurance,parentcaregiver_baseline_form,,radio,Is your child covered by health insurance?,"1, Yes, military | 2, Yes, employer-sponsored | 3, Yes, individual | 4, Yes, Medicare | 5, Yes, Medicaid or CHIP | 6, Yes, other | 7, No",,,,,,,,,,,,
+exposed,parentcaregiver_baseline_form, ,checkbox,Has your child been exposed to someone suspected of having COVID-19? (check all that apply),"1, Yes, someone who tested positive for COVID-19 | 2, Yes, someone diagnosed with COVID-19, but who was not tested | 3, Yes, someone showing symptoms of COVID-19, but not diagnosed or tested | 4, No, not to my knowledge",,,,,,,,,,,,
+suspectedinfected,parentcaregiver_baseline_form,,yesno,Has your child been suspected of having COVID-19 infection?,,,,,,,,,,,,,
+covidtest,parentcaregiver_baseline_form,,radio,Has your child been tested for COVID-19?,"1, Yes, the test came back positive for COVID-19 | 2, Yes, the test came back negative for COVID-19 | 3, Yes, but I do not know the result of the test | 4, No, my child has not been tested for COVID-19",,,,,,,,,,,,
+coviddx,parentcaregiver_baseline_form,,yesno,Has your child been diagnosed with COVID-19 by a health professional?,,,,,,,,,,,,,
+symptoms,parentcaregiver_baseline_form,,checkbox,Has your child had any of the following symptoms of COVID-19 since the pandemic began? (check all that apply),"1, Fever | 2, Cough | 3, Muscle pains | 4, Headache | 5, Chills | 6, Runny nose | 7, Shortness of breath | 8, Sore throat | 9, Fatigue | 10, Loss of taste or smell | 11, Eye infection | 12, Other | 13, None of the above",,,,,,,,,,,,
+othersymptoms,parentcaregiver_baseline_form,,text,Other:,,,,,,,[symptoms(12)] = '1',,,,,,
+diagnosedfamily,parentcaregiver_baseline_form,,checkbox,Has anyone in your child's family or household been diagnosed with or tested positive for COVID-19? (check all that apply),"1, Yes, a family member who lives with my child | 2, Yes, a family member who does not live with my child | 3, Yes, a member of my household who is not related to my child | 4, No",,,,,,,,,,,,
+impact,parentcaregiver_baseline_form,,checkbox,Have any of the following happened to your child's family members because of COVID-19? (check all that apply) ,"1, Fallen ill physically | 2, Hospitalized | 3, Self-quarantine with symptoms | 4, Self-quarantine without symptoms | 5, Lost or been laid off from job | 6, Reduced ability to earn money | 7, Passed away | 8, None of the above",,,,,,,,,,,,
+inschool,parentcaregiver_baseline_form, ,yesno,"Was your child in school during the 2019-2020 school year?
+",,,,,,,,,,,,,
+schoolclosed,parentcaregiver_baseline_form,,yesno,"Did your child's school close due to COVID-19? 
+",,,,,,,[inschool] = '1',,,,,,
+onlineclasses,parentcaregiver_baseline_form,,yesno,Did classes resume online? ,,,,,,,[schoolclosed] = '1',,,,,,
+internetcompacess,parentcaregiver_baseline_form,,yesno,Did your child have easy access to the internet and a computer?,,,,,,,[schoolclosed] = '1',,,,,,
+assignments,parentcaregiver_baseline_form,,yesno,Did your child continue to get school assignments/homework? ,,,,,,,[schoolclosed] = '1',,,,,,
+classesinsession,parentcaregiver_baseline_form,,yesno,Did classes remain in session throughout the school year? ,,,,,,,[schoolclosed] = '0',,,,,,
+classesirl,parentcaregiver_baseline_form,,yesno,Did your child continue to attend classes in-person? ,,,,,,,[schoolclosed] = '0',,,,,,
+inschool_2,parentcaregiver_baseline_form,,yesno,"Was your child in school during the 2020-2021 school year?
+",,,,,,,,,,,,,
+schoolclosed_2,parentcaregiver_baseline_form,,yesno,"Did your child's school close due to COVID-19? 
+",,,,,,,[inschool_2] = '1',,,,,,
+onlineclasses_2,parentcaregiver_baseline_form,,yesno,Did classes resume online? ,,,,,,,[schoolclosed_2] = '1',,,,,,
+internetcompacess_2,parentcaregiver_baseline_form,,yesno,Does your child have easy access to the internet and a computer?,,,,,,,[schoolclosed_2] = '1',,,,,,
+assignments_2,parentcaregiver_baseline_form,,yesno,Does your child continue to get school assignments/homework? ,,,,,,,[schoolclosed_2] = '1',,,,,,
+classesinsession_2,parentcaregiver_baseline_form,,yesno,Are classes in session? ,,,,,,,[schoolclosed_2] = '0',,,,,,
+classesirl_2,parentcaregiver_baseline_form,,yesno,Does your child continue to attend classes in-person? ,,,,,,,[schoolclosed_2] = '0',,,,,,
+changestolivingsituation,parentcaregiver_baseline_form, ,yesno,Did any changes to your child's living situation occur because of COVID-19?,,,,,,,,,,,,,
+changestolivingsituation2,parentcaregiver_baseline_form,,checkbox,"If yes, please specify (check all that apply): ","1, The people my child Iives with changed | 2, My child had to move",,,,,,[changestolivingsituation] = '1',,,,,,
+disruptedsupports,parentcaregiver_baseline_form,,checkbox,Which of the following supports for your child were disrupted due to COVID-19? (check all that apply),"1, Childcare | 2, Resource room | 3, Tutoring | 4, Mentoring programs | 5, After school activity programs | 6, Volunteer programs | 7, Psychotherapy | 8, Psychiatric care | 9, Substance use disorder treatment | 10, Occupational therapy | 11, Physical therapy | 12, Speech/language therapy | 13, Sporting activities | 14, Medical care for chronic illnesses | 15, Other | 16, None of the above",,,,,,,,,,,,
+disruptedsupportsother,parentcaregiver_baseline_form,,text,Other:,,,,,,,[disruptedsupports(15)] = '1',,,,,,
+positivechange,parentcaregiver_baseline_form,,radio,"Has COVID-19 led to any positive changes in your child's life?
+","1, None | 2, Only a few | 3, Some",,,,,,,,,,,,
+specifypositive,parentcaregiver_baseline_form,,text,Please specify:,,,,,,,[positivechange] = '2' or [positivechange] = '3',,,,,,
+introthreemonths,parentcaregiver_baseline_form,THREE MONTHS PRIOR TO COVID-19,descriptive,"Please think about the <u>THREE MONTHS PRIOR</u> to when COVID-19 began in your area. For many locations in the United States, this is around mid-December 2019 through mid-March 2020.",,,,,,,,,,,,,
+govtassistance,parentcaregiver_baseline_form,,yesno,"Did your child's family receive money from government assistance programs like welfare, General Assistance, or Temporary Assistance for Needy Families before COVID-19 in your area?",,,,,,,,,,,,,
+physicalhealth,parentcaregiver_baseline_form,,radio,How would you rate your child's overall physical health before COVID-19 in your area? ,"1, Excellent | 2, Very Good | 3, Good | 4, Fair | 5, Poor",,,,,,,,,,,,
+mentalhealth,parentcaregiver_baseline_form,,radio,How would you rate your child's overall mental/emotional health before COVID-19 in your area? ,"1, Excellent | 2, Very Good | 3, Good | 4, Fair | 5, Poor",,,,,,,,,,,,
+threemonthspriorbehaviors,parentcaregiver_baseline_form, ,descriptive,During the <u>THREE MONTHS PRIOR</u> to when COVID-19 began in your area:,,,,,,,,,,,,,
+priorweekdaybedtime,parentcaregiver_baseline_form,,radio,"...on average, what time did your child go to bed on WEEKDAYS?
+","1, Before 8 pm | 2, 8 pm - 10 pm | 3, 10 pm - 12 am | 4, After 12 am",,,,,,,,,,,,
+priorweekendbedtime,parentcaregiver_baseline_form,,radio,"...on average, what time did your child go to bed on WEEKENDS?
+","1, Before 8 pm | 2, 8 pm -10 pm | 3, 10 pm - 12 am | 4, After 12 am",,,,,,,,,,,,
+priorhoursofsleepweekdays,parentcaregiver_baseline_form,,radio,"...on average, how many hours per night did your child sleep on WEEKDAYS?
+","1, Fewer than 6 hours | 2, 6-8 hours | 3, 8-10 hours | 4, More than 10 hours",,,,,,,,,,,,
+priorhoursofsleepweekend,parentcaregiver_baseline_form,,radio,"...on average, how many hours per night did your child sleep on WEEKENDS?
+","1, Fewer than 6 hours | 2, 6-8 hours | 3, 8-10 hours | 4, More than 10 hours",,,,,,,,,,,,
+troublesleeping,parentcaregiver_baseline_form,,radio,...how often did your child have trouble sleeping?,"1, Not at all during those three months | 2, Less than once a week | 3, Once or twice a week | 4, Three or more times a week",,,,,,,,,,,,
+sleepquality,parentcaregiver_baseline_form,,radio,...how would you rate your child's sleep quality overall?,"1, Very good | 2, Fairly good | 3, Fairly bad | 4, Very bad",,,,,,,,,,,,
+exerciseprior,parentcaregiver_baseline_form,,radio,"...how many days per week did your child exercise (e.g., increased heart rate, breathing) for at least 30 minutes?
+
+
+","1, None | 2, 1-2 days | 3, 3-4 days | 4, 5-6 days | 5, Daily",,,,,,,,,,,,
+outdoorsprior,parentcaregiver_baseline_form,,radio,"...how many days per week did your child spend time outdoors?
+
+
+","1, None | 2, 1-2 days | 3, 3-4 days | 4, 5-6 days | 5, Daily",,,,,,,,,,,,
+threemonthspriorfeelings,parentcaregiver_baseline_form, ,descriptive,During the <u>THREE MONTHS PRIOR</u> to when COVID-19 began in your area:,,,,,,,,,,,,,
+priorworry,parentcaregiver_baseline_form,,radio,"...how worried was your child generally?
+
+
+","1, Not worried at all | 2, Slightly worried | 3, Moderately worried | 4, Very worried | 5, Extremely worried",,,,,,,,,,,,
+priorhappyvssad,parentcaregiver_baseline_form,,radio,"...how happy versus sad was your child?
+
+
+","1, Very sad/depressed/unhappy | 2, Moderately sad/depressed/unhappy | 3, Neutral | 4, Moderately happy/cheerful | 5, Very happy/cheerful",,,,,,,,,,,,
+priorenjoyactivities,parentcaregiver_baseline_form,,radio,...how much was your child been able to enjoy their usual activities? ,"1, Not at all | 2, Slightly | 3, Moderately | 4, Very much | 5, A lot",,,,,,,,,,,,
+priorrelaxedvsanxious,parentcaregiver_baseline_form,,radio,...how relaxed versus anxious was your child?,"1, Very nervous/anxious | 2, Moderately nervous/anxious | 3, Neutral | 4, Moderately relaxed/calm | 5, Very relaxed/calm",,,,,,,,,,,,
+priorfidget,parentcaregiver_baseline_form,,radio,...how fidgety or restless was your child?,"1, Not fidgety/restless at all | 2, Slightly fidgety/restless | 3, Moderately fidgety/restless | 4, Very fidgety/restless | 5, Extremely fidgety/restless",,,,,,,,,,,,
+priorfatigue,parentcaregiver_baseline_form,,radio,...how fatigued or tired was your child?,"1, Not fatigued or tired at all | 2, Slightly fatigued or tired | 3, Moderately fatigued or tired | 4, Very fatigued or tired | 5, Extremely fatigued or tired",,,,,,,,,,,,
+priorfocus,parentcaregiver_baseline_form,,radio,...how well was your child able to concentrate or focus?,"1, Very unfocused/distracted | 2, Moderately unfocused/distracted | 3, Neutral | 4, Moderately focused/attentive | 5, Very focused/attentive",,,,,,,,,,,,
+priorirritable,parentcaregiver_baseline_form,,radio,...how irritable or easily angered was your child?,"1, Not irritable or easily angered at all | 2, Slightly irritable or easily angered | 3, Moderately irritable or easily angered | 4, Very irritable or easily angered | 5, Extremely irritable or easily angered",,,,,,,,,,,,
+priorlonely,parentcaregiver_baseline_form,,radio,...how lonely was your child?,"1, Not lonely at all | 2, Slightly lonely | 3, Moderately lonely | 4, Very lonely | 5, Extremely lonely",,,,,,,,,,,,
+priornegthoughts,parentcaregiver_baseline_form,,radio,"...to what extent did your child express negative thoughts, thoughts about unpleasant experiences or things that made them feel bad?","1, Not at all | 2, Rarely | 3, Occasionally | 4, Often | 5, A lot of the time",,,,,,,,,,,,
+threemonthspriormedia,parentcaregiver_baseline_form, ,descriptive,"During the <u>THREE MONTHS PRIOR</u> to the onset of the Coronavirus/COVID-19 crisis in your area, how much time per day did your child spend:",,,,,,,,,,,,,
+priortvmedia,parentcaregiver_baseline_form,,radio,"...watching TV or digital media (e.g., Netflix, YouTube, web surfing)? 
+","1, No TV or digital media | 2, Under 1 hour | 3, 1-3 hours | 4, 4-6 hours | 5, More than 6 hours",,,,,,,,,,,,
+priorsocialmedia,parentcaregiver_baseline_form,,radio,"...using social media (e.g., Facetime, Facebook, Instagram, Snapchat, Twitter, TikTok)?
+","1, No social media | 2, Under 1 hour | 3, 1-3 hours | 4, 4-6 hours | 5, More than 6 hours",,,,,,,,,,,,
+socialmedialonely,parentcaregiver_baseline_form,,radio,How lonely vs. connected did your child feel while spending time on social media?,"1, 1 Mostly Lonely | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 Mostly Connected",,,,,,[priorsocialmedia] = '2' or [priorsocialmedia] = '3' or [priorsocialmedia] = '4' or [priorsocialmedia] = '5',,,,,,
+socialmediabored,parentcaregiver_baseline_form,,radio,How bored vs. engaged did you feel while spending time on social media?,"1, 1 Mostly Bored | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 Mostly Engaged",,,,,,[priorsocialmedia] = '2' or [priorsocialmedia] = '3' or [priorsocialmedia] = '4' or [priorsocialmedia] = '5',,,,,,
+priorvideogames,parentcaregiver_baseline_form,,radio,"...playing video games?
+","1, No video games | 2, Under 1 hour | 3, 1-3 hours | 4, 4-6 hours | 5, More than 6 hours",,,,,,,,,,,,
+introsubstance,parentcaregiver_baseline_form, ,descriptive,The next questions ask about your child's use of alcohol and other drugs.  Remember all the information you share will be kept private.,,,,,,,,,,,,,
+alcohol,parentcaregiver_baseline_form,"During the <u>THREE MONTHS PRIOR</u> to when COVID-19 began in your area, how often did your child use:",radio,Alcohol?,"1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesthreemonths,,
+vape,parentcaregiver_baseline_form,,radio,"Vaping products (e.g. electronic cigarettes, vape pens, e-hookah, e-cigars, e-pipes, hookah pen)?","1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesthreemonths,,
+cigarettes,parentcaregiver_baseline_form,,radio,"Cigarettes, even one or two puffs?","1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesthreemonths,,
+tobacco,parentcaregiver_baseline_form,,radio,"Other tobacco products (e.g., cigars, cigarillos, dissolvables, hookah, pipes, smokeless tobacco, waterpipe)?","1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesthreemonths,,
+marijuana,parentcaregiver_baseline_form,,radio,"Marijuana/cannabis (e.g., weed, pot, joint, blunt, pipe, bong, hashish, hash oil)?","1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesthreemonths,,
+heroin,parentcaregiver_baseline_form,,radio,Heroin?,"1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesthreemonths,,
+cocaine,parentcaregiver_baseline_form,,radio,"Cocaine, crack, amphetamine, methamphetamine, hallucinogens, or ecstasy?","1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesthreemonths,,
+rxpain,parentcaregiver_baseline_form,,radio,"Prescription pain relievers (e.g., hydrocodone, oxycodone, morphine, codeine) in any way <u>a doctor did not direct your child to use them?","1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesthreemonths,,
+rxsleeping,parentcaregiver_baseline_form,,radio,"Prescription sleeping medications or sedatives/hypnotics (e.g., alprazolam, diazepam, estazolam, lorazepam, zolpidem) in any way <u>a doctor did not direct your child to use them?","1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesthreemonths,,
+rxstimulants,parentcaregiver_baseline_form,,radio,"Prescription stimulants (e.g., dextroamphetamine, dexmethylphenidate, methylphenidate) in any way <u>a doctor did not direct your child to use them?","1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesthreemonths,,
+rxother,parentcaregiver_baseline_form,,radio,Other prescription medications in any way <u>a doctor did not direct your child to use them?,"1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesthreemonths,,
+substanceproblems,parentcaregiver_baseline_form,,yesno,Did your child's use of alcohol or other drugs cause any problems?,,,,,,,[alcohol] = '3' or [alcohol] = '4' or [alcohol] = '5' or [alcohol] = '6' or [alcohol] = '7' or [alcohol] = '8' or [vape] = '3' or [vape] = '4' or [vape] = '5' or [vape] = '6' or [vape] = '7' or [vape] = '8' or [cigarettes] = '3' or [cigarettes] = '4' or [cigarettes] = '5' or [cigarettes] = '6' or [cigarettes] = '7' or [cigarettes] = '8' or [tobacco] = '3' or [tobacco] = '4' or [tobacco] = '5' or [tobacco] = '6' or [tobacco] = '7' or [tobacco] = '8' or [marijuana] = '3' or [marijuana] = '4' or [marijuana] = '5' or [marijuana] = '6' or [marijuana] = '7' or [marijuana] = '8' or [heroin] = '3' or [heroin] = '4' or [heroin] = '5' or [heroin] = '6' or [heroin] = '6' or [heroin] = '7' or [heroin] = '7' or [heroin] = '8' or [cocaine] = '3' or [cocaine] = '4' or [cocaine] = '5' or [cocaine] = '6' or [cocaine] = '7' or [cocaine] = '8' or [rxpain] = '3' or [rxpain] = '4' or [rxpain] = '5' or [rxpain] = '6' or [rxpain] = '7' or [rxpain] = '8' or [rxsleeping] = '3' or [rxsleeping] = '4' or [rxsleeping] = '5' or [rxsleeping] = '6' or [rxsleeping] = '7' or [rxsleeping] = '8' or [rxstimulants] = '3' or [rxstimulants] = '4' or [rxstimulants] = '5' or [rxstimulants] = '6' or [rxstimulants] = '7' or [rxstimulants] = '8' or [rxother] = '3' or [rxother] = '4' or [rxother] = '5' or [rxother] = '6' or [rxother] = '7' or [rxother] = '8',,,,,,
+substancecomplaint,parentcaregiver_baseline_form,,yesno,Has anyone complained about your child's use of alcohol or other drugs?,,,,,,,[alcohol] = '3' or [alcohol] = '4' or [alcohol] = '5' or [alcohol] = '6' or [alcohol] = '7' or [alcohol] = '8' or [vape] = '3' or [vape] = '4' or [vape] = '5' or [vape] = '6' or [vape] = '7' or [vape] = '8' or [cigarettes] = '3' or [cigarettes] = '4' or [cigarettes] = '5' or [cigarettes] = '6' or [cigarettes] = '7' or [cigarettes] = '8' or [tobacco] = '3' or [tobacco] = '4' or [tobacco] = '5' or [tobacco] = '6' or [tobacco] = '7' or [tobacco] = '8' or [marijuana] = '3' or [marijuana] = '4' or [marijuana] = '5' or [marijuana] = '6' or [marijuana] = '7' or [marijuana] = '8' or [heroin] = '3' or [heroin] = '4' or [heroin] = '5' or [heroin] = '6' or [heroin] = '6' or [heroin] = '7' or [heroin] = '7' or [heroin] = '8' or [cocaine] = '3' or [cocaine] = '4' or [cocaine] = '5' or [cocaine] = '6' or [cocaine] = '7' or [cocaine] = '8' or [rxpain] = '3' or [rxpain] = '4' or [rxpain] = '5' or [rxpain] = '6' or [rxpain] = '7' or [rxpain] = '8' or [rxsleeping] = '3' or [rxsleeping] = '4' or [rxsleeping] = '5' or [rxsleeping] = '6' or [rxsleeping] = '7' or [rxsleeping] = '8' or [rxstimulants] = '3' or [rxstimulants] = '4' or [rxstimulants] = '5' or [rxstimulants] = '6' or [rxstimulants] = '7' or [rxstimulants] = '8' or [rxother] = '3' or [rxother] = '4' or [rxother] = '5' or [rxother] = '6' or [rxother] = '7' or [rxother] = '8',,,,,,
+pastmonthintro,parentcaregiver_baseline_form, PAST MONTH,descriptive,Now please think about the <u>PAST MONTH</u>. During the PAST MONTH...,,,,,,,,,,,,,
+inpersonconvo,parentcaregiver_baseline_form,,radio,"...how often has your child had in-person conversations with people outside of their household?
+","1, Not at all | 2, 1-2 days per week | 3, A few days per week | 4, Several days per week | 6, Every day",,,,,,,,,,,,
+timeoutside,parentcaregiver_baseline_form,,radio,"...how much time has your child spent going outside of the home (e.g., going to stores, parks, etc.)?
+
+","1, Not at all | 2, 1-2 days per week | 3, A few days per week | 4, Several days per week | 5, Every day",,,,,,,,,,,,
+readingtalking,parentcaregiver_baseline_form,,radio,"...how often is your child asking questions, reading or talking about COVID-19?","1, Never | 2, Rarely | 3, Occasionally | 4, Often | 5, Most of the time",,,,,,,,,,,,
+mask,parentcaregiver_baseline_form,...to what extent has your child been taking the following steps to prevent infection or spread of the virus?,radio,Wearing a mask or face covering in public,"1, Never | 2, Sometimes | 3, Often | 4, Very often/Always",,,,,,,,,,covidprecautions,,
+gloves,parentcaregiver_baseline_form,,radio,Wearing gloves in public,"1, Never | 2, Sometimes | 3, Often | 4, Very often/Always",,,,,,,,,,covidprecautions,,
+washinghands,parentcaregiver_baseline_form,,radio,Washing hands,"1, Never | 2, Sometimes | 3, Often | 4, Very often/Always",,,,,,,,,,covidprecautions,,
+handsanitizer,parentcaregiver_baseline_form,,radio,Using hand sanitizer,"1, Never | 2, Sometimes | 3, Often | 4, Very often/Always",,,,,,,,,,covidprecautions,,
+distance,parentcaregiver_baseline_form,,radio,Staying at least 6 feet away from others,"1, Never | 2, Sometimes | 3, Often | 4, Very often/Always",,,,,,,,,,covidprecautions,,
+avoidgroups,parentcaregiver_baseline_form,,radio,Avoiding group in-person activities,"1, Never | 2, Sometimes | 3, Often | 4, Very often/Always",,,,,,,,,,covidprecautions,,
+avoidindoor,parentcaregiver_baseline_form,,radio,"Avoiding indoor public places (e.g., stores) when possible","1, Never | 2, Sometimes | 3, Often | 4, Very often/Always",,,,,,,,,,covidprecautions,,
+restrictionsstress,parentcaregiver_baseline_form,,radio,"...how stressful have the restrictions on leaving home been for your child?
+
+","1, Not at all | 2, Slightly | 3, Moderately | 4, Very | 5, Extremely",,,,,,,,,,,,
+contactschanged,parentcaregiver_baseline_form,,radio,"...how has the frequency of your child's contacts with people outside of their home changed relative to <i>before</i> COVID-19 in your area?
+
+","1, A lot less | 2, A little less | 3, About the same | 4, A little more | 5, A lot more",,,,,,,,,,,,
+difficultydistancing,parentcaregiver_baseline_form,,radio,"...how much difﬁculty has your child had following the recommendations to avoid close contact with people?
+
+","1, None | 2, A little | 3, Moderate | 4, A lot | 5, A great amount",,,,,,,,,,,,
+familychange,parentcaregiver_baseline_form,,radio,"...how has the quality of the relationships between your child and their family members changed? 
+
+","1, A lot worse | 2, A little worse | 3, About the same | 4, A little better | 5, A lot better",,,,,,,,,,,,
+familychangestress,parentcaregiver_baseline_form,,radio,"...how stressful have these changes in family relationships been for your child?
+
+
+
+","1, Not at all | 2, Slightly | 3, Moderately | 4, Very | 5, Extremely",,,,,,,,,,,,
+friendschange,parentcaregiver_baseline_form,,radio,"...how has the quality of your child's relationships with their friends changed?
+
+
+
+
+","1, A lot worse | 2, A little worse | 3, About the same | 4, A little better | 5, A lot better",,,,,,,,,,,,
+friendchangestress,parentcaregiver_baseline_form,,radio,"...how stressful have these changes in social relationships been for your child?
+
+
+","1, Not at all | 2, Slightly | 3, Moderately | 4, Very | 5, Extremely",,,,,,,,,,,,
+difficultycancellations,parentcaregiver_baseline_form,,radio,"...how much has cancellation of important events (such as graduation, prom, vacation, etc.) in your child's life been difficult for your child?
+
+
+","1, Not at all | 2, Slightly | 3, Moderately | 4, Very | 5, Extremely",,,,,,,,,,,,
+financedifficulty,parentcaregiver_baseline_form,,radio,"...to what degree have changes related to the COVID-19 crisis in your area created financial problems for your child or your child's family?
+
+
+","1, Not at all | 2, Slightly | 3, Moderately | 4, Very | 5, Extremely",,,,,,,,,,,,
+livingdifficulty,parentcaregiver_baseline_form,,radio,"...to what degree is your child concerned about the stability of their living situation?
+
+
+","1, Not at all | 2, Slightly | 3, Moderately | 4, Very | 5, Extremely",,,,,,,,,,,,
+foodsecurity,parentcaregiver_baseline_form,,yesno,"...did your child worry whether their food would run out because of a lack of money? 
+
+
+",,,,,,,,,,,,,
+hopefullyend,parentcaregiver_baseline_form,,radio,"How hopeful is your child that COVID-19 in your area will end soon?
+
+
+
+","1, Not at all | 2, Slightly | 3, Moderately | 4, Very | 5, Extremely",,,,,,,,,,,,
+primarycare,parentcaregiver_baseline_form,"In the past month, has your needed to access any of the following healthcare providers or services? (check all that apply)",checkbox,Primary Care,"1, My child has not needed access to this service | 2, Yes, my child has accessed through telehealth or telemedicine | 4, Yes, my child has accessed through in-person office appointments | 5, My child needed this service but could not access it",,,,,,,,,,healthcareserviceaccess,,
+psychiatry,parentcaregiver_baseline_form,,checkbox,Psychiatry,"1, My child has not needed access to this service | 2, Yes, my child has accessed through telehealth or telemedicine | 4, Yes, my child has accessed through in-person office appointments | 5, My child needed this service but could not access it",,,,,,,,,,healthcareserviceaccess,,
+neurology,parentcaregiver_baseline_form,,checkbox,Neurology,"1, My child has not needed access to this service | 2, Yes, my child has accessed through telehealth or telemedicine | 4, Yes, my child has accessed through in-person office appointments | 5, My child needed this service but could not access it",,,,,,,,,,healthcareserviceaccess,,
+substance,parentcaregiver_baseline_form,,checkbox,Substance use or recovery services,"1, My child has not needed access to this service | 2, Yes, my child has accessed through telehealth or telemedicine | 4, Yes, my child has accessed through in-person office appointments | 5, My child needed this service but could not access it",,,,,,,,,,healthcareserviceaccess,,
+psychology,parentcaregiver_baseline_form,,checkbox,Psychology,"1, My child has not needed access to this service | 2, Yes, my child has accessed through telehealth or telemedicine | 4, Yes, my child has accessed through in-person office appointments | 5, My child needed this service but could not access it",,,,,,,,,,healthcareserviceaccess,,
+other,parentcaregiver_baseline_form,,checkbox,"Other (e.g., dentist)","1, My child has not needed access to this service | 2, Yes, my child has accessed through telehealth or telemedicine | 4, Yes, my child has accessed through in-person office appointments | 5, My child needed this service but could not access it",,,,,,,,,,healthcareserviceaccess,,
+pastmonthworried,parentcaregiver_baseline_form, ,descriptive,During the <u>PAST MONTH</u> how worried had your child been about:,,,,,,,,,,,,,
+worriedyourself,parentcaregiver_baseline_form,,radio,...being infected?,"1, Not at all | 2, Slightly | 3, Moderately | 4, Very | 5, Extremely",,,,,,,,,,,,
+worriedothers,parentcaregiver_baseline_form,,radio,...friends or family being infected?,"1, Not at all | 2, Slightly | 3, Moderately | 4, Very | 5, Extremely",,,,,,,,,,,,
+worriedphysical,parentcaregiver_baseline_form,,radio,...their <i>physical health</i> being inﬂuenced by COVID-19?,"1, Not at all | 2, Slightly | 3, Moderately | 4, Very | 5, Extremely",,,,,,,,,,,,
+worriedmental,parentcaregiver_baseline_form,,radio,"...their <i>mental/emotional health</i> being inﬂuenced by COVID-19?
+","1, Not at all | 2, Slightly | 3, Moderately | 4, Very | 5, Extremely",,,,,,,,,,,,
+monthbehaviors,parentcaregiver_baseline_form, ,descriptive,During the <u>PAST MONTH</u>:,,,,,,,,,,,,,
+priorweekdaybedtime_2,parentcaregiver_baseline_form,,radio,"...on average, what time did your child go to bed on WEEKDAYS?
+","1, Before 8 pm | 2, 8 pm -10 pm | 3, 10 pm - 12 am | 4, After midnight",,,,,,,,,,,,
+priorweekendbedtime_2,parentcaregiver_baseline_form,,radio,"...on average, what time did your child go to bed on WEEKENDS?
+","1, Before 8 pm | 2, 8 pm -10 pm | 3, 10 pm - 12 am | 4, After midnight",,,,,,,,,,,,
+hoursofsleepweekdays_2,parentcaregiver_baseline_form,,radio,"...on average, how many hours per night did your child sleep on WEEKDAYS?
+","1, Fewer than 6 hours | 2, 6-8 hours | 3, 8-10 hours | 4, More than 10 hours",,,,,,,,,,,,
+hoursofsleepweekends_2,parentcaregiver_baseline_form,,radio,"...on average, how many hours per night did your child sleep on WEEKENDS?
+","1, Fewer than 6 hours | 2, 6-8 hours | 3, 8-10 hours | 4, More than 10 hours",,,,,,,,,,,,
+troublesleeping_2,parentcaregiver_baseline_form,,radio,...how often did your child have trouble sleeping?,"1, Not at all during the past month | 2, Less than once a week | 3, Once or twice a week | 4, Three or more times a week",,,,,,,,,,,,
+sleepquality_2,parentcaregiver_baseline_form,,radio,...how would you rate your child's sleep quality overall?,"1, Very good | 2, Fairly good | 3, Fairly bad | 4, Very bad",,,,,,,,,,,,
+exerciseprior_2,parentcaregiver_baseline_form,,radio,"...how many days per week did your child exercise (e.g., increased heart rate, breathing) for at least 30 minutes?
+
+
+","1, None | 2, 1-2 days | 3, 3-4 days | 4, 5-6 days | 5, Daily",,,,,,,,,,,,
+outdoorsprior_2,parentcaregiver_baseline_form,,radio,"...how many days per week did your child spend time outdoors?
+
+
+","1, None | 2, 1-2 days | 3, 3-4 days | 4, 5-6 days | 5, Daily",,,,,,,,,,,,
+monthemotions,parentcaregiver_baseline_form, ,descriptive,During the <u>PAST MONTH</u>:,,,,,,,,,,,,,
+priorworry_2,parentcaregiver_baseline_form,,radio,"...how worried was your child generally?
+
+
+","1, Not worried at all | 2, Slightly worried | 3, Moderately worried | 4, Very worried | 5, Extremely worried",,,,,,,,,,,,
+priorhappyvssad_2,parentcaregiver_baseline_form,,radio,"...how happy versus sad was your child?
+
+
+","1, Very sad/depressed/unhappy | 2, Moderately sad/depressed/unhappy | 3, Neutral | 4, Moderately happy/cheerful | 5, Very happy/cheerful",,,,,,,,,,,,
+priorenjoyactivities_2,parentcaregiver_baseline_form,,radio,...how much was your child been able to enjoy their usual activities? ,"1, Not at all | 2, Slightly | 3, Moderately | 4, Very much | 5, A lot",,,,,,,,,,,,
+priorrelaxedvsanxious_2,parentcaregiver_baseline_form,,radio,...how relaxed versus anxious was your child?,"1, Very nervous/anxious | 2, Moderately nervous/anxious | 3, Neutral | 4, Moderately relaxed/calm | 5, Very relaxed/calm",,,,,,,,,,,,
+priorfidget_2,parentcaregiver_baseline_form,,radio,...how fidgety or restless was your child?,"1, Not fidgety/restless at all | 2, Slightly fidgety/restless | 3, Moderately fidgety/restless | 4, Very fidgety/restless | 5, Extremely fidgety/restless",,,,,,,,,,,,
+priorfatigue_2,parentcaregiver_baseline_form,,radio,...how fatigued or tired was your child?,"1, Not fatigued or tired at all | 2, Slightly fatigued or tired | 3, Moderately fatigued or tired | 4, Very fatigued or tired | 5, Extremely fatigued or tired",,,,,,,,,,,,
+priorfocus_2,parentcaregiver_baseline_form,,radio,...how well was your child able to concentrate or focus?,"1, Very unfocused/distracted | 2, Moderately unfocused/distracted | 3, Neutral | 4, Moderately focused/attentive | 5, Very focused/attentive",,,,,,,,,,,,
+priorirritable_2,parentcaregiver_baseline_form,,radio,...how irritable or easily angered was your child been?,"1, Not irritable or easily angered at all | 2, Slightly irritable or easily angered | 3, Moderately irritable or easily angered | 4, Very irritable or easily angered | 5, Extremely irritable or easily angered",,,,,,,,,,,,
+priorlonely_2,parentcaregiver_baseline_form,,radio,...how lonely was your child?,"1, Not lonely at all | 2, Slightly lonely | 3, Moderately lonely | 4, Very lonely | 5, Extremely lonely",,,,,,,,,,,,
+priornegthoughts_2,parentcaregiver_baseline_form,,radio,"...to what extent did your child express negative thoughts, thoughts about unpleasant experiences or things that make them feel bad?","1, Not at all | 2, Rarely | 3, Occasionally | 4, Often | 5, A lot of the time",,,,,,,,,,,,
+pastmonth,parentcaregiver_baseline_form, ,descriptive,During the <u>PAST MONTH:,,,,,,,,,,,,,
+emotionsinterfereschool,parentcaregiver_baseline_form,,radio,"...how much have your child's emotions, worries, or thoughts interfered with their ability to do well at school?","1, Not at all | 2, Slightly | 3, Moderately | 4, Very much | 5, Extremely",,,,,,,,,,,,
+emotionsinterferefamily,parentcaregiver_baseline_form,,radio,"...how much have your child's emotions, worries, or thoughts caused problems with their ability to get along with their family?","1, Not at all | 2, Slightly | 3, Moderately | 4, Very much | 5, Extremely",,,,,,,,,,,,
+emotionsinterferesocial,parentcaregiver_baseline_form,,radio,"...how much have your child's emotions, worries, or thoughts caused problems with their social life?","1, Not at all | 2, Slightly | 3, Moderately | 4, Very much | 5, Extremely",,,,,,,,,,,,
+lackcompanionship,parentcaregiver_baseline_form,,radio,...how often has your child felt that they lack companionship?,"1, Never | 2, Rarely | 3, Sometimes | 4, Often",,,,,,,,,,,,
+leftout,parentcaregiver_baseline_form,,radio,...how often has your child felt left out?,"1, Never | 2, Rarely | 3, Sometimes | 4, Often",,,,,,,,,,,,
+isolated,parentcaregiver_baseline_form,,radio,...how often has your child felt isolated from others?,"1, Never | 2, Rarely | 3, Sometimes | 4, Often",,,,,,,,,,,,
+peopletotalkto,parentcaregiver_baseline_form,,radio,...how often has your child felt that there are people they can talk to?,"1, Never | 2, Rarely | 3, Sometimes | 4, Often",,,,,,,,,,,,
+peopletoturnto,parentcaregiver_baseline_form,,radio,...how often has your child felt that there are people they can turn to?,"1, Never | 2, Rarely | 3, Sometimes | 4, Often",,,,,,,,,,,,
+monthmedia,parentcaregiver_baseline_form, ,descriptive,"During the <u>PAST MONTH</u>, how much time PER DAY did your child spend:",,,,,,,,,,,,,
+priortvmedia_2,parentcaregiver_baseline_form,,radio,"...watching TV or digital media (e.g., Netflix, YouTube, web surfing)? 
+","1, No TV or digital media | 2, Under 1 hour | 3, 1-3 hours | 4, 4-6 hours | 5, More than 6 hours",,,,,,,,,,,,
+priorsocialmedia_2,parentcaregiver_baseline_form,,radio,"...using social media (e.g., Facetime, Facebook, Instagram, Snapchat, Twitter, TikTok)?
+","1, No social media | 2, Under 1 hour | 3, 1-3 hours | 4, 4-6 hours | 5, More than 6 hours",,,,,,,,,,,,
+socialmedialonely_2,parentcaregiver_baseline_form,,radio,How lonely vs. connected did your child feel while spending time on social media?,"1, 1 Mostly Lonely | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 Mostly Connected",,,,,,[priorsocialmedia_2] = '2' or [priorsocialmedia_2] = '3' or [priorsocialmedia_2] = '4' or [priorsocialmedia_2] = '5',,,,,,
+socialmediabored_2,parentcaregiver_baseline_form,,radio,How bored vs. engaged did you feel while spending time on social media?,"1, 1 Mostly Bored | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 Mostly Engaged",,,,,,[priorsocialmedia_2] = '2' or [priorsocialmedia_2] = '3' or [priorsocialmedia_2] = '4' or [priorsocialmedia_2] = '5',,,,,,
+priorvideogames_2,parentcaregiver_baseline_form,,radio,"...playing video games?
+","1, No video games | 2, Under 1 hour | 3, 1-3 hours | 4, 4-6 hours | 5, More than 6 hours",,,,,,,,,,,,
+alcohol2,parentcaregiver_baseline_form,"During the <u>PAST MONTH</u>, how often did your child use:",radio,Alcohol?,"1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesmonth,,
+vape2,parentcaregiver_baseline_form,,radio,"Vaping products (e.g. electronic cigarettes, vape pens, e-hookah, e-cigars, e-pipes, hookah pen)?","1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesmonth,,
+cigarettes2,parentcaregiver_baseline_form,,radio,"Cigarettes, even one or two puffs?","1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesmonth,,
+tobacco2,parentcaregiver_baseline_form,,radio,"Other tobacco products (e.g., cigars, cigarillos, dissolvables, hookah, pipes, smokeless tobacco, waterpipe)?","1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesmonth,,
+marijuana2,parentcaregiver_baseline_form,,radio,"Marijuana/cannabis (e.g., weed, pot, joint, blunt, pipe, bong, hashish, hash oil)?","1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesmonth,,
+heroin2,parentcaregiver_baseline_form,,radio,Heroin?,"1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesmonth,,
+cocaine2,parentcaregiver_baseline_form,,radio,"Cocaine, crack, amphetamine, methamphetamine, hallucinogens, or ecstasy?","1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesmonth,,
+rxpain2,parentcaregiver_baseline_form,,radio,"Prescription pain relievers (e.g., hydrocodone, oxycodone, morphine, codeine) in any way <u>a doctor did not direct your child to use them?","1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesmonth,,
+rxsleep2,parentcaregiver_baseline_form,,radio,"Prescription sleeping medications or sedatives/hypnotics (e.g., alprazolam, diazepam, estazolam, lorazepam, zolpidem) in any way <u>a doctor did not direct your child to use them?","1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesmonth,,
+rxstimulants2,parentcaregiver_baseline_form,,radio,"Prescription stimulants (e.g., dextroamphetamine, dexmethylphenidate, methylphenidate) in any way <u>a doctor did not direct your child to use them?","1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesmonth,,
+rxother2,parentcaregiver_baseline_form,,radio,Other prescription medications in any way <u>a doctor did not direct your child to use them?,"1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesmonth,,
+substanceproblems2,parentcaregiver_baseline_form,,yesno,Did your child's use of alcohol or other drugs cause any problems?,,,,,,,[alcohol2] = '3' or [alcohol2] = '4' or [alcohol2] = '5' or [alcohol2] = '6' or [alcohol2] = '7' or [vape2] = '3' or [vape2] = '4' or [vape2] = '5' or [vape2] = '6' or [vape2] = '7' or [vape2] = '8' or [cigarettes2] = '3' or [cigarettes2] = '4' or [cigarettes2] = '5' or [cigarettes2] = '6' or [cigarettes2] = '7' or [cigarettes2] = '8' or [tobacco2] = '3' or [tobacco2] = '4' or [tobacco2] = '5' or [tobacco2] = '6' or [tobacco2] = '7' or [tobacco2] = '8' or [marijuana2] = '3' or [marijuana2] = '4' or [marijuana2] = '5' or [marijuana2] = '6' or [marijuana2] = '7' or [marijuana2] = '8' or [heroin2] = '3' or [heroin2] = '4' or [heroin2] = '5' or [heroin2] = '6' or [heroin2] = '7' or [heroin2] = '8' or [cocaine2] = '3' or [cocaine2] = '4' or [cocaine2] = '5' or [cocaine2] = '6' or [cocaine2] = '7' or [cocaine2] = '8' or [rxpain2] = '3' or [rxpain2] = '4' or [rxpain2] = '5' or [rxpain2] = '6' or [rxpain2] = '7' or [rxpain2] = '8' or [rxsleep2] = '3' or [rxsleep2] = '4' or [rxsleep2] = '5' or [rxsleep2] = '6' or [rxsleep2] = '7' or [rxsleep2] = '8' or [rxstimulants2] = '3' or [rxstimulants2] = '4' or [rxstimulants2] = '5' or [rxstimulants2] = '6' or [rxstimulants2] = '7' or [rxstimulants2] = '8' or [rxother2] = '3' or [rxother2] = '4' or [rxother2] = '5' or [rxother2] = '6' or [rxother2] = '7' or [rxother2] = '8',,,,,,
+substancecomplaint2,parentcaregiver_baseline_form,,yesno,Has anyone complained about your child's use of alcohol or other drugs?,,,,,,,[alcohol2] = '3' or [alcohol2] = '4' or [alcohol2] = '5' or [alcohol2] = '6' or [alcohol2] = '7' or [vape2] = '3' or [vape2] = '4' or [vape2] = '5' or [vape2] = '6' or [vape2] = '7' or [vape2] = '8' or [cigarettes2] = '3' or [cigarettes2] = '4' or [cigarettes2] = '5' or [cigarettes2] = '6' or [cigarettes2] = '7' or [cigarettes2] = '8' or [tobacco2] = '3' or [tobacco2] = '4' or [tobacco2] = '5' or [tobacco2] = '6' or [tobacco2] = '7' or [tobacco2] = '8' or [marijuana2] = '3' or [marijuana2] = '4' or [marijuana2] = '5' or [marijuana2] = '6' or [marijuana2] = '7' or [marijuana2] = '8' or [heroin2] = '3' or [heroin2] = '4' or [heroin2] = '5' or [heroin2] = '6' or [heroin2] = '7' or [heroin2] = '8' or [cocaine2] = '3' or [cocaine2] = '4' or [cocaine2] = '5' or [cocaine2] = '6' or [cocaine2] = '7' or [cocaine2] = '8' or [rxpain2] = '3' or [rxpain2] = '4' or [rxpain2] = '5' or [rxpain2] = '6' or [rxpain2] = '7' or [rxpain2] = '8' or [rxsleep2] = '3' or [rxsleep2] = '4' or [rxsleep2] = '5' or [rxsleep2] = '6' or [rxsleep2] = '7' or [rxsleep2] = '8' or [rxstimulants2] = '3' or [rxstimulants2] = '4' or [rxstimulants2] = '5' or [rxstimulants2] = '6' or [rxstimulants2] = '7' or [rxstimulants2] = '8' or [rxother2] = '3' or [rxother2] = '4' or [rxother2] = '5' or [rxother2] = '6' or [rxother2] = '7' or [rxother2] = '8',,,,,,
+timestamp2,parentcaregiver_baseline_form,,text,,,,,,,,,,,,,,@NOW @HIDDEN

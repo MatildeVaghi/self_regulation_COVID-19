@@ -1,0 +1,274 @@
+﻿Variable / Field Name,Form Name,Section Header,Field Type,Field Label,"Choices, Calculations, OR Slider Labels",Field Note,Text Validation Type OR Show Slider Number,Text Validation Min,Text Validation Max,Identifier?,Branching Logic (Show field only if...),Required Field?,Custom Alignment,Question Number (surveys only),Matrix Group Name,Matrix Ranking?,Field Annotation
+ID,,,text,Unique respondent ID,,,,,,,,,,,,,
+timestamp1,adult_selfreport_baseline_form,,text,,,,,,,,,,,,,,@NOW @HIDDEN
+age,adult_selfreport_baseline_form,,text,Your age (years):,,,number,,,y,,,,,,,
+before,adult_selfreport_baseline_form,BACKGROUND,descriptive,"First, before we get started with the main questions, we would like to obtain some background information about you.
+",,,,,,,,,,,,,
+gender,adult_selfreport_baseline_form,,dropdown,What is your gender identity? ,"1, Man | 2, Woman | 3, Non-binary | 4, Transgender man | 5, Transgender woman | 6, Other",,,,,,,,,,,,
+gender_other,adult_selfreport_baseline_form,,text,Other:,,,,,,,[gender] = '6',,,,,,
+raceethnicity,adult_selfreport_baseline_form,,checkbox,Which of these categories best describe you? Please select all that apply.,"1, White | 2, Black / African American | 3, Latino / Latina / Latinx or Hispanic | 4, American Indian or Alaska Native | 5, East Asian or Pacific Islander | 6, South or Southeast Asian | 7, Middle Eastern or North African | 8, Caribbean | 9, A race, ethnicity, or origin not listed",,,,,,,,,,,,
+raceethnicitydescribe,adult_selfreport_baseline_form,,text,"If a race, ethnicity, or origin not listed, please describe:",,,,,,,[raceethnicity(9)] = '1',,,,,,
+tall,adult_selfreport_baseline_form,,text,How tall are you?,,,number,,,,,,,,,,
+measurementheight,adult_selfreport_baseline_form,,radio,Measurement:,"1, Inches (in) | 2, Centimeters (cm)",,,,,,,,,,,,
+weight,adult_selfreport_baseline_form,,text,How much do you weigh?,,,number,,,,,,,,,,
+measurementweight,adult_selfreport_baseline_form,,radio,Measurement:,"1, Pounds (lbs) | 2, Kilograms (kg)",,,,,,,,,,,,
+sexualorientation,adult_selfreport_baseline_form,,radio,Which of these best describes your sexual orientation?,"1, Gay | 2, Lesbian | 3, Heterosexual/Straight | 4, Bisexual | 5, Other | 6, Prefer not to answer",,,,,,,,,,,,
+sexualorientationother,adult_selfreport_baseline_form,,text,Other:,,,,,,,[sexualorientation] = '5',,,,,,
+cigarettesyn,adult_selfreport_baseline_form,,yesno,"In your lifetime, have you ever smoked part or all of a cigarette?  ",,,,,,,,,,,,,
+healthconditions,adult_selfreport_baseline_form,,checkbox,Has a health or educational professional ever told you that you had any of the following health conditions (check all that apply)? ,"1, Allergies | 2, Asthma or other lung problems | 3, Heart problems or hypertension | 4, Kidney problems | 5, Immune disorder | 6, Diabetes or high blood sugar | 7, Cancer | 8, Arthritis | 9, Frequent or very bad headaches | 10, Epilepsy or seizures | 11, Serious stomach or bowel problems | 12, Serious acne or skin problems | 13, Emotional or mental health problems such as Depression or Anxiety | 14, Problems with alcohol or drugs | 15, Intellectual disability | 16, Autism Spectrum Disorder | 17, Learning Disorder | 18, Other",,,,,,,,,,,,
+otherhealth,adult_selfreport_baseline_form,,text,Please specify:,,,,,,,[healthconditions(18)] = '1',,,,,,
+working,adult_selfreport_baseline_form,,checkbox,Are you currently working or in school? (check all that apply),"1, Working full-time for pay | 2, Working part-time for pay | 3, Volunteer work | 4, On leave | 5, Laid off or lost a job | 6, Unemployed and looking for a job | 7, Unemployed and <u>not</u> looking for a job | 8, Retired | 9, Staying at home/homemaker | 10, Disabled | 11, Enrolled in school/college/university",,,,,,,,,,,,
+applyunemployment,adult_selfreport_baseline_form,,yesno,Did you file for unemployment benefits?,,,,,,,[working(4)] = '1' or [working(5)] = '1' or [working(6)] = '1' or [working(7)] = '1',,,,,,
+recieveunemployment,adult_selfreport_baseline_form,,yesno,Did you receive them?,,,,,,,[applyunemployment] = '1',,,,,,
+stillrecieveunemployment,adult_selfreport_baseline_form,,yesno,Are you still receiving them?,,,,,,,[recieveunemployment] = '1',,,,,,
+occupation,adult_selfreport_baseline_form,,text,What is your occupation?,,,,,,,,,,,,,
+essentialworker,adult_selfreport_baseline_form,,yesno,"Are you an ESSENTIAL WORKER (e.g., healthcare worker, first responder, delivery worker, store worker, security, building maintenance)? ",,,,,,,,,,,,,
+location,adult_selfreport_baseline_form,,radio,Which best describes the area in which you live?,"1, Large city | 2, Suburbs of a large city | 3, Small city | 4, Town or village | 5, Rural area",,,,,,,,,,,,
+education,adult_selfreport_baseline_form,,radio,What is the highest level of education you completed?,"1, Some grade school | 2, Some high school | 3, High school diploma or GED | 4, Some college or 2-year degree | 5, 4-year college graduate | 6, Some school beyond college | 7, Graduate or professional degree (e.g., MA, MS, MBA, PhD, EdD, MD, DDS, JD, DVM)",,,,,,,,,,,,
+householdnumber,adult_selfreport_baseline_form,,text,How many people currently live in your home (excluding yourself)? ,,,number,,,,,,,,,,
+householdcomp,adult_selfreport_baseline_form,,checkbox,Please specify your relationship to the people in your home (check all that apply):,"1, Partner/Spouse/Significant Other | 2, Parent(s) | 3, Grandparent(s) | 4, Siblings | 5, Children age 18 or over | 6, Children under age 18 | 7, Other relatives | 8, Unrelated person",,,,,,,,,,,,
+livewithessentialworker,adult_selfreport_baseline_form,,yesno,"Aside from you, is anyone else in your household an ESSENTIAL WORKER (e.g., healthcare worker, first responder, delivery worker, store worker, security, building maintenance)? ",,,,,,,,,,,,,
+roomsinhouse,adult_selfreport_baseline_form,,text,How many rooms (<u>not</u> including bathrooms) are in your home?  ,,,number,,,,,,,,,,
+insurance,adult_selfreport_baseline_form,,radio,Are you covered by health insurance?,"1, Yes, military | 2, Yes, employer-sponsored | 3, Yes, individual | 4, Yes, Medicare | 5, Yes, Medicaid or CHIP | 6, Yes, other | 7, No",,,,,,,,,,,,
+exposed,adult_selfreport_baseline_form, ,checkbox,Have you been exposed to someone suspected of having COVID-19? (check all that apply),"1, Yes, someone who tested positive for COVID-19 | 2, Yes, someone diagnosed with COVID-19, but who was not tested | 3, Yes, someone showing symptoms of COVID-19, but not diagnosed or tested | 4, No, not to my knowledge",,,,,,,,,,,,
+suspectedinfected,adult_selfreport_baseline_form,,yesno,Have you been suspected of having COVID-19?,,,,,,,,,,,,,
+covidtest,adult_selfreport_baseline_form,,radio,Have you been tested for COVID-19?,"1, Yes, my test came back positive for COVID-19 | 2, Yes, my test came back negative for COVID-19 | 3, Yes, but I do not know the result of the test | 4, No, I have not been tested for COVID-19",,,,,,,,,,,,
+coviddx,adult_selfreport_baseline_form,,yesno,Have you been diagnosed with COVID-19 by a health professional?,,,,,,,,,,,,,
+symptoms,adult_selfreport_baseline_form,,checkbox,Have you had any of the following symptoms of COVID-19 since the pandemic began? (check all that apply),"1, Fever | 2, Cough | 3, Muscle pains | 4, Headache | 5, Chills | 6, Runny nose | 7, Shortness of breath | 8, Sore throat | 9, Fatigue | 10, Loss of taste or smell | 11, Eye infection | 12, Other | 13, None of the above",,,,,,,,,,,,
+othersymptoms,adult_selfreport_baseline_form,,text,Other symptoms:,,,,,,,[symptoms(12)] = '1',,,,,,
+diagnosedfamily,adult_selfreport_baseline_form,,checkbox,Has anyone in your family or household been diagnosed with or tested positive for COVID-19? (check all that apply),"1, Yes, a family member who lives with me | 2, Yes, a family member who does not live with me | 3, Yes, a member of my household who is not related to me | 4, No",,,,,,,,,,,,
+impact,adult_selfreport_baseline_form,,checkbox,Have any of the following happened to your family members because of COVID-19? (check all that apply) ,"1, Fallen ill physically | 2, Hospitalized | 3, Self-quarantine with symptoms | 4, Self-quarantine without symptoms | 5, Lost or been laid off from job | 6, Reduced ability to earn money | 7, Passed away | 8, None of the above",,,,,,,,,,,,
+inschool,adult_selfreport_baseline_form, ,yesno,Were you in school during the 2019-2020 school year?,,,,,,,,,,,,,
+schoolclosed,adult_selfreport_baseline_form,,yesno,Did your school close due to COVID-19? ,,,,,,,[inschool] = '1',,,,,,
+onlineclasses,adult_selfreport_baseline_form,,yesno,Did classes resume online? ,,,,,,,[schoolclosed] = '1',,,,,,
+internetcompacess,adult_selfreport_baseline_form,,yesno,Did you have easy access to the internet and a computer?,,,,,,,[schoolclosed] = '1',,,,,,
+assignments,adult_selfreport_baseline_form,,yesno,Did you continue to get school assignments/homework? ,,,,,,,[schoolclosed] = '1',,,,,,
+classesinsession,adult_selfreport_baseline_form,,yesno,Did classes remain in session throughout the school year? ,,,,,,,[schoolclosed] = '0',,,,,,
+classesirl,adult_selfreport_baseline_form,,yesno,Did you continue to attend classes in-person?,,,,,,,[schoolclosed] = '0',,,,,,
+inschool_2,adult_selfreport_baseline_form,,yesno,Were you in school during the 2020-2021 school year?,,,,,,,,,,,,,
+schoolclosed_2,adult_selfreport_baseline_form,,yesno,Did your school close due to COVID-19? ,,,,,,,[inschool_2] = '1',,,,,,
+onlineclasses_2,adult_selfreport_baseline_form,,yesno,Did classes resume online? ,,,,,,,[schoolclosed_2] = '1',,,,,,
+internetcompacess_2,adult_selfreport_baseline_form,,yesno,Do you have easy access to the internet and a computer?,,,,,,,[schoolclosed_2] = '1',,,,,,
+assignments_2,adult_selfreport_baseline_form,,yesno,Do you continue to get school assignments/homework? ,,,,,,,[schoolclosed_2] = '1',,,,,,
+classesinsession_2,adult_selfreport_baseline_form,,yesno,Are classes in session? ,,,,,,,[schoolclosed_2] = '0',,,,,,
+classesirl_2,adult_selfreport_baseline_form,,yesno,Do you continue to attend classes in-person?,,,,,,,[schoolclosed_2] = '0',,,,,,
+work,adult_selfreport_baseline_form,,radio,Did you lose your job because of COVID-19?,"1, Yes | 0, No | 2, Not Applicable / was not employed before the pandemic",,,,,,,,,,,,
+goingtoworkplace,adult_selfreport_baseline_form,,yesno,Have you been going to your physical workplace since COVID-19?,,,,,,,[work] = '0',,,,,,
+physicalworkplaceoften,adult_selfreport_baseline_form,,radio,How often are you going to your physical workplace compared to prior COVID-19? ,"1, Same amount | 2, Less often | 3, More often",,,,,,[goingtoworkplace] = '1',,,,,,
+workfromhome,adult_selfreport_baseline_form,,radio,Have you been teleworking or working from home since COVID-19?,"1, No, not at all | 2, Yes, the same amount as before | 3, Yes, but less often than before | 4, Yes, more often than before",,,,,,[goingtoworkplace] = '0',,,,,,
+backtowork,adult_selfreport_baseline_form,,radio,Have you gone back to work?,"1, Yes, same job | 2, Yes, different job | 3, No",,,,,,[work] = '1',,,,,,
+changestolivingsituation,adult_selfreport_baseline_form, ,yesno,Did any changes to your living situation occur because of COVID-19?,,,,,,,,,,,,,
+changestolivingsituation2,adult_selfreport_baseline_form,,checkbox,"If yes, please specify (check all that apply): ","1, The people I Iive with changed | 2, I had to move",,,,,,[changestolivingsituation] = '1',,,,,,
+disruptedsupports,adult_selfreport_baseline_form,,checkbox,Which of the following supports were disrupted due to COVID-19? (check all that apply),"1, Childcare | 2, Resource room | 3, Tutoring | 4, Mentoring programs | 5, After school activity programs | 6, Volunteer programs | 7, Psychotherapy | 8, Psychiatric care | 9, Substance use disorder treatment | 10, Occupational therapy | 11, Physical therapy | 12, Speech/language therapy | 13, Sporting activities | 14, Medical care for chronic illnesses | 15, Other | 16, None of the above",,,,,,,,,,,,
+disruptedsupportsother,adult_selfreport_baseline_form,,text,Other:,,,,,,,[disruptedsupports(15)] = '1',,,,,,
+positivechange,adult_selfreport_baseline_form,,radio,"Has COVID-19 led to any positive changes in your life?
+","1, None | 2, Only a few | 3, Some",,,,,,,,,,,,
+specifypositive,adult_selfreport_baseline_form,,text,Please specify:,,,,,,,[positivechange] = '2' or [positivechange] = '3',,,,,,
+introthreemonths,adult_selfreport_baseline_form,THREE MONTHS PRIOR TO COVID-19,descriptive,"Please think about the <u>THREE MONTHS PRIOR</u> to when COVID-19 began in your area. For many locations in the United States, this is around mid-December 2019 through mid-March 2020.",,,,,,,,,,,,,
+govtassistance,adult_selfreport_baseline_form,,yesno,"Did you or your family receive money from government assistance programs like welfare, General Assistance, or Temporary Assistance for Needy Families before COVID-19 in your area?",,,,,,,,,,,,,
+physicalhealth,adult_selfreport_baseline_form,,radio,How would you rate your overall physical health before COVID-19 in your area? ,"1, Excellent | 2, Very Good | 3, Good | 4, Fair | 5, Poor",,,,,,,,,,,,
+mentalhealth,adult_selfreport_baseline_form,,radio,How would you rate your overall Mental/Emotional health before COVID-19 in your area? ,"1, Excellent | 2, Very Good | 3, Good | 4, Fair | 5, Poor",,,,,,,,,,,,
+threemonthspriorbehavior,adult_selfreport_baseline_form, ,descriptive,During the <u>THREE MONTHS PRIOR</u> to when COVID-19 began in your area:,,,,,,,,,,,,,
+bedtimeweekdays,adult_selfreport_baseline_form,,radio,"...on average, what time did you go to bed on WEEKDAYS?","1, Before 9 pm | 2, 9 pm - 11 pm | 3, 11 pm - 1 am | 4, After 1 am",,,,,,,,,,,,
+bedtimeweekends,adult_selfreport_baseline_form,,radio,"...on average, what time did you go to bed on WEEKENDS?","1, Before 9 pm | 2, 9 pm - 11 pm | 3, 11 pm - 1 am | 4, After 1 am",,,,,,,,,,,,
+hoursofsleepweekdays,adult_selfreport_baseline_form,,radio,"...on average, how many hours per night did you sleep on WEEKDAYS?
+","1, Fewer than 6 hours | 2, 6-8 hours | 3, 8-10 hours | 4, More than 10 hours",,,,,,,,,,,,
+hoursofsleepweekends,adult_selfreport_baseline_form,,radio,"...on average, how many hours per night did you sleep on WEEKENDS?
+","1, Fewer than 6 hours | 2, 6-8 hours | 3, 8-10 hours | 4, More than 10 hours",,,,,,,,,,,,
+troublesleeping,adult_selfreport_baseline_form,,radio,...how often did you have trouble sleeping?,"1, Not at all during those three months | 2, Less than once a week | 3, Once or twice a week | 4, Three or more times a week",,,,,,,,,,,,
+sleepquality,adult_selfreport_baseline_form,,radio,...how would you rate your sleep quality overall?,"1, Very good | 2, Fairly good | 3, Fairly bad | 4, Very bad",,,,,,,,,,,,
+exerciseprior,adult_selfreport_baseline_form,,radio,"...how many days per week did you exercise (e.g., increased heart rate, breathing) for at least 30 minutes?
+
+
+","1, None | 2, 1-2 days | 3, 3-4 days | 4, 5-6 days | 5, Daily",,,,,,,,,,,,
+outdoorsprior,adult_selfreport_baseline_form,,radio,"...how many days per week did you spend time outdoors?
+
+
+","1, None | 2, 1-2 days | 3, 3-4 days | 4, 5-6 days | 5, Daily",,,,,,,,,,,,
+threemonthspriorfeelings,adult_selfreport_baseline_form, ,descriptive,During the <u>THREE MONTHS PRIOR</u> to when COVID-19 began in your area:,,,,,,,,,,,,,
+priorworry,adult_selfreport_baseline_form,,radio,"...how worried were you generally?
+
+
+","1, Not worried at all | 2, Slightly worried | 3, Moderately worried | 4, Very worried | 5, Extremely worried",,,,,,,,,,,,
+priorhappyvssad,adult_selfreport_baseline_form,,radio,"...how happy versus sad were you?
+
+
+","1, Very sad/depressed/unhappy | 2, Moderately sad/depressed/unhappy | 3, Neutral | 4, Moderately happy/cheerful | 5, Very happy/cheerful",,,,,,,,,,,,
+priorenjoyactivities,adult_selfreport_baseline_form,,radio,...how much were you able to enjoy your usual activities? ,"1, Not at all | 2, Slightly | 3, Moderately | 4, Very much | 5, A lot",,,,,,,,,,,,
+priorrelaxedvsanxious,adult_selfreport_baseline_form,,radio,...how relaxed versus anxious were you?,"1, Very nervous/anxious | 2, Moderately nervous/anxious | 3, Neutral | 4, Moderately relaxed/calm | 5, Very relaxed/calm",,,,,,,,,,,,
+priorfidget,adult_selfreport_baseline_form,,radio,...how fidgety or restless were you?,"1, Not fidgety/restless at all | 2, Slightly fidgety/restless | 3, Moderately fidgety/restless | 4, Very fidgety/restless | 5, Extremely fidgety/restless",,,,,,,,,,,,
+priorfatigue,adult_selfreport_baseline_form,,radio,...how fatigued or tired were you?,"1, Not fatigued or tired at all | 2, Slightly fatigued or tired | 3, Moderately fatigued or tired | 4, Very fatigued or tired | 5, Extremely fatigued or tired",,,,,,,,,,,,
+priorfocus,adult_selfreport_baseline_form,,radio,...how well were you able to concentrate or focus?,"1, Very unfocused/distracted | 2, Moderately unfocused/distracted | 3, Neutral | 4, Moderately focused/attentive | 5, Very focused/attentive",,,,,,,,,,,,
+priorirritable,adult_selfreport_baseline_form,,radio,...how irritable or easily angered were you?,"1, Not irritable or easily angered at all | 2, Slightly irritable or easily angered | 3, Moderately irritable or easily angered | 4, Very irritable or easily angered | 5, Extremely irritable or easily angered",,,,,,,,,,,,
+priorlonely,adult_selfreport_baseline_form,,radio,...how lonely were you?,"1, Not lonely at all | 2, Slightly lonely | 3, Moderately lonely | 4, Very lonely | 5, Extremely lonely",,,,,,,,,,,,
+priornegthoughts,adult_selfreport_baseline_form,,radio,"...to what extent did you have negative thoughts, thoughts about unpleasant experiences or things that made you feel bad?","1, Not at all | 2, Rarely | 3, Occasionally | 4, Often | 5, A lot of the time",,,,,,,,,,,,
+threemonthspriormedia,adult_selfreport_baseline_form, ,descriptive,"During the <u>THREE MONTHS PRIOR</u> to when COVID-19 began in your area, how much time PER DAY did you spend:",,,,,,,,,,,,,
+priortvmedia,adult_selfreport_baseline_form,,radio,"...watching TV or digital media (e.g., Netflix, YouTube, web surfing)? 
+","1, No TV or digital media | 2, Under 1 hour | 3, 1-3 hours | 4, 4-6 hours | 5, More than 6 hours",,,,,,,,,,,,
+priorsocialmedia,adult_selfreport_baseline_form,,radio,"...using social media (e.g., Facetime, Facebook, Instagram, Snapchat, Twitter, TikTok)?
+","1, No social media | 2, Under 1 hour | 3, 1-3 hours | 4, 4-6 hours | 5, More than 6 hours",,,,,,,,,,,,
+socialmedialonely,adult_selfreport_baseline_form,,radio,How lonely vs. connected did you feel while spending time on social media?,"1, 1 Mostly Lonely | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 Mostly Connected",,,,,,[priorsocialmedia] = '2' or [priorsocialmedia] = '3' or [priorsocialmedia] = '4' or [priorsocialmedia] = '5',,,,,,
+socialmediabored,adult_selfreport_baseline_form,,radio,How bored vs. engaged did you feel while spending time on social media?,"1, 1 Mostly Bored | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 Mostly Engaged",,,,,,[priorsocialmedia] = '2' or [priorsocialmedia] = '3' or [priorsocialmedia] = '4' or [priorsocialmedia] = '5',,,,,,
+priorvideogames,adult_selfreport_baseline_form,,radio,"...playing video games?
+","1, No video games | 2, Under 1 hour | 3, 1-3 hours | 4, 4-6 hours | 5, More than 6 hours",,,,,,,,,,,,
+introsubstance,adult_selfreport_baseline_form, ,descriptive,The next questions ask about your use of alcohol and other drugs. Remember all the information you share will be kept private.,,,,,,,,,,,,,
+alcohol,adult_selfreport_baseline_form,"During the <u>THREE MONTHS PRIOR</u> to when COVID-19 began in your area, how often did you use:",radio,Alcohol?,"1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesthreemonths,,
+vape,adult_selfreport_baseline_form,,radio,"Vaping products (e.g. electronic cigarettes, vape pens, e-hookah, e-cigars, e-pipes, hookah pen)?","1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesthreemonths,,
+cigarettes,adult_selfreport_baseline_form,,radio,"Cigarettes, even one or two puffs?","1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesthreemonths,,
+tobacco,adult_selfreport_baseline_form,,radio,"Other tobacco products (e.g., cigars, cigarillos, dissolvables, hookah, pipes, smokeless tobacco, waterpipe)?","1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesthreemonths,,
+marijuana,adult_selfreport_baseline_form,,radio,"Marijuana/cannabis (e.g., weed, pot, joint, blunt, pipe, bong, hashish, hash oil)?","1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesthreemonths,,
+heroin,adult_selfreport_baseline_form,,radio,Heroin?,"1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesthreemonths,,
+cocaine,adult_selfreport_baseline_form,,radio,"Cocaine, crack, amphetamine, methamphetamine, hallucinogens, or ecstasy?","1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesthreemonths,,
+rxpain,adult_selfreport_baseline_form,,radio,"Prescription pain relievers (e.g., hydrocodone, oxycodone, morphine, codeine) in any way <u>a doctor did not direct you to use them?","1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesthreemonths,,
+rxsleeping,adult_selfreport_baseline_form,,radio,"Prescription sleeping medications or sedatives/hypnotics (e.g., alprazolam, diazepam, estazolam, lorazepam, zolpidem) in any way <u>a doctor did not direct you to use them?","1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesthreemonths,,
+rxstimulants,adult_selfreport_baseline_form,,radio,"Prescription stimulants (e.g., dextroamphetamine, dexmethylphenidate, methylphenidate) in any way <u>a doctor did not direct you to use them?","1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesthreemonths,,
+rxother,adult_selfreport_baseline_form,,radio,Other prescription medications in any way <u>a doctor did not direct you to use them?,"1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesthreemonths,,
+substanceproblems,adult_selfreport_baseline_form,,yesno,Did your use of alcohol or other drugs cause any problems for you?,,,,,,,[alcohol] = '3' or [alcohol] = '4' or [alcohol] = '5' or [alcohol] = '6' or [alcohol] = '7' or [alcohol] = '8' or [vape] = '3' or [vape] = '4' or [vape] = '5' or [vape] = '6' or [vape] = '7' or [vape] = '8' or [cigarettes] = '3' or [cigarettes] = '4' or [cigarettes] = '5' or [cigarettes] = '6' or [cigarettes] = '7' or [cigarettes] = '8' or [tobacco] = '3' or [tobacco] = '4' or [tobacco] = '5' or [tobacco] = '6' or [tobacco] = '7' or [tobacco] = '8' or [marijuana] = '3' or [marijuana] = '4' or [marijuana] = '5' or [marijuana] = '6' or [marijuana] = '7' or [marijuana] = '8' or [heroin] = '3' or [heroin] = '4' or [heroin] = '5' or [heroin] = '6' or [heroin] = '6' or [heroin] = '7' or [heroin] = '7' or [heroin] = '8' or [cocaine] = '3' or [cocaine] = '4' or [cocaine] = '5' or [cocaine] = '6' or [cocaine] = '7' or [cocaine] = '8' or [rxpain] = '3' or [rxpain] = '4' or [rxpain] = '5' or [rxpain] = '6' or [rxpain] = '7' or [rxpain] = '8' or [rxsleeping] = '3' or [rxsleeping] = '4' or [rxsleeping] = '5' or [rxsleeping] = '6' or [rxsleeping] = '7' or [rxsleeping] = '8' or [rxstimulants] = '3' or [rxstimulants] = '4' or [rxstimulants] = '5' or [rxstimulants] = '6' or [rxstimulants] = '7' or [rxstimulants] = '8' or [rxother] = '3' or [rxother] = '4' or [rxother] = '5' or [rxother] = '6' or [rxother] = '7' or [rxother] = '8',,,,,,
+substancecomplaint,adult_selfreport_baseline_form,,yesno,Has anyone complained about your use of alcohol or other drugs?,,,,,,,[alcohol] = '3' or [alcohol] = '4' or [alcohol] = '5' or [alcohol] = '6' or [alcohol] = '7' or [alcohol] = '8' or [vape] = '3' or [vape] = '4' or [vape] = '5' or [vape] = '6' or [vape] = '7' or [vape] = '8' or [cigarettes] = '3' or [cigarettes] = '4' or [cigarettes] = '5' or [cigarettes] = '6' or [cigarettes] = '7' or [cigarettes] = '8' or [tobacco] = '3' or [tobacco] = '4' or [tobacco] = '5' or [tobacco] = '6' or [tobacco] = '7' or [tobacco] = '8' or [marijuana] = '3' or [marijuana] = '4' or [marijuana] = '5' or [marijuana] = '6' or [marijuana] = '7' or [marijuana] = '8' or [heroin] = '3' or [heroin] = '4' or [heroin] = '5' or [heroin] = '6' or [heroin] = '6' or [heroin] = '7' or [heroin] = '7' or [heroin] = '8' or [cocaine] = '3' or [cocaine] = '4' or [cocaine] = '5' or [cocaine] = '6' or [cocaine] = '7' or [cocaine] = '8' or [rxpain] = '3' or [rxpain] = '4' or [rxpain] = '5' or [rxpain] = '6' or [rxpain] = '7' or [rxpain] = '8' or [rxsleeping] = '3' or [rxsleeping] = '4' or [rxsleeping] = '5' or [rxsleeping] = '6' or [rxsleeping] = '7' or [rxsleeping] = '8' or [rxstimulants] = '3' or [rxstimulants] = '4' or [rxstimulants] = '5' or [rxstimulants] = '6' or [rxstimulants] = '7' or [rxstimulants] = '8' or [rxother] = '3' or [rxother] = '4' or [rxother] = '5' or [rxother] = '6' or [rxother] = '7' or [rxother] = '8',,,,,,
+pastmonthintro,adult_selfreport_baseline_form,PAST MONTH,descriptive,Now please think about the <u>PAST MONTH.</u> During the PAST MONTH...,,,,,,,,,,,,,
+inpersonconvo,adult_selfreport_baseline_form,,radio,"...how often have you had in-person conversations with people outside of your household?
+","1, Not at all | 2, 1-2 days per week | 3, A few days per week | 4, Several days per week | 5, Every day",,,,,,,,,,,,
+timeoutside,adult_selfreport_baseline_form,,radio,"...how much time have you spent going outside of the home (e.g., going to stores, parks, etc.)?
+
+","1, Not at all | 2, 1-2 days per week | 3, A few days per week | 4, Several days per week | 5, Every day",,,,,,,,,,,,
+readingtalking,adult_selfreport_baseline_form,,radio,How much are you reading or talking about COVID-19?,"1, Never | 2, Rarely | 3, Occasionally | 4, Often | 5, Most of the time",,,,,,,,,,,,
+mask,adult_selfreport_baseline_form,...to what extent have you been taking the following steps to prevent infection or spread of the virus?,radio,Wearing a mask or face covering in public,"1, Never | 2, Sometimes | 3, Often | 4, Very often/Always",,,,,,,,,,covidprecautions,,
+gloves,adult_selfreport_baseline_form,,radio,Wearing gloves in public,"1, Never | 2, Sometimes | 3, Often | 4, Very often/Always",,,,,,,,,,covidprecautions,,
+washinghands,adult_selfreport_baseline_form,,radio,Washing hands,"1, Never | 2, Sometimes | 3, Often | 4, Very often/Always",,,,,,,,,,covidprecautions,,
+handsanitizer,adult_selfreport_baseline_form,,radio,Using hand sanitizer,"1, Never | 2, Sometimes | 3, Often | 4, Very often/Always",,,,,,,,,,covidprecautions,,
+distance,adult_selfreport_baseline_form,,radio,Staying at least 6 feet away from others,"1, Never | 2, Sometimes | 3, Often | 4, Very often/Always",,,,,,,,,,covidprecautions,,
+avoidgroups,adult_selfreport_baseline_form,,radio,Avoiding group in-person activities,"1, Never | 2, Sometimes | 3, Often | 4, Very often/Always",,,,,,,,,,covidprecautions,,
+avoidindoor,adult_selfreport_baseline_form,,radio,"Avoiding indoor public places (e.g., stores) when possible","1, Never | 2, Sometimes | 3, Often | 4, Very often/Always",,,,,,,,,,covidprecautions,,
+restrictionsstress,adult_selfreport_baseline_form,,radio,"...how stressful have the restrictions on leaving home been for you?
+
+","1, Not at all | 2, Slightly | 3, Moderately | 4, Very | 5, Extremely",,,,,,,,,,,,
+contactschanged,adult_selfreport_baseline_form,,radio,"...how has the frequency of your contacts with people outside of your home changed relative to <i>before</i> COVID-19 in your area?
+
+","1, A lot less | 2, A little less | 3, About the same | 4, A little more | 5, A lot more",,,,,,,,,,,,
+difficultydistancing,adult_selfreport_baseline_form,,radio,"...how much difﬁculty have you had following the recommendations to avoid close contact with people?
+","1, None | 2, A little | 3, Moderate | 4, A lot | 5, A great amount",,,,,,,,,,,,
+familychange,adult_selfreport_baseline_form,,radio,"...how has the quality of the relationships between you and your family members changed? 
+
+","1, A lot worse | 2, A little worse | 3, About the same | 4, A little better | 5, A lot better",,,,,,,,,,,,
+familychangestress,adult_selfreport_baseline_form,,radio,"...how stressful have these changes in family relationships been for you?
+
+
+
+","1, Not at all | 2, Slightly | 3, Moderately | 4, Very | 5, Extremely",,,,,,,,,,,,
+friendschange,adult_selfreport_baseline_form,,radio,"...how has the quality of your relationships with your friends changed?
+
+
+
+
+","1, A lot worse | 2, A little worse | 3, About the same | 4, A little better | 5, A lot better",,,,,,,,,,,,
+friendchangestress,adult_selfreport_baseline_form,,radio,"...how stressful have these changes in social relationships been for you?
+
+
+
+","1, Not at all | 2, Slightly | 3, Moderately | 4, Very | 5, Extremely",,,,,,,,,,,,
+difficultycancellations,adult_selfreport_baseline_form,,radio,"...how much has cancellation of important events (such as graduation, prom, vacation, etc.) in your life been difficult for you?
+
+
+","1, Not at all | 2, Slightly | 3, Moderately | 4, Very | 5, Extremely",,,,,,,,,,,,
+financedifficulty,adult_selfreport_baseline_form,,radio,"...to what degree have changes related to COVID-19 in your area created financial problems for you or your family?
+
+
+","1, Not at all | 2, Slightly | 3, Moderately | 4, Very | 5, Extremely",,,,,,,,,,,,
+livingdifficulty,adult_selfreport_baseline_form,,radio,"...to what degree are you concerned about the stability of your living situation?
+
+
+","1, Not at all | 2, Slightly | 3, Moderately | 4, Very | 5, Extremely",,,,,,,,,,,,
+foodsecurity,adult_selfreport_baseline_form,,yesno,"...did you worry whether your food would run out because of a lack of money? 
+
+
+",,,,,,,,,,,,,
+hopefullyend,adult_selfreport_baseline_form,,radio,"How hopeful are you that COVID-19 in your area will end soon?
+
+
+
+","1, Not at all | 2, Slightly | 3, Moderately | 4, Very | 5, Extremely",,,,,,,,,,,,
+primarycare,adult_selfreport_baseline_form,"In the past month, have you needed to access any of the following healthcare providers or services? (check all that apply)",checkbox,Primary Care,"1, I have not needed access to this service | 2, Yes, I have accessed through telehealth or telemedicine | 3, Yes, I have accessed through in-person office appointments | 4, I needed this service but could not access it",,,,,,,,,,healthcareserviceaccess,,
+psychiatry,adult_selfreport_baseline_form,,checkbox,Psychiatry,"1, I have not needed access to this service | 2, Yes, I have accessed through telehealth or telemedicine | 3, Yes, I have accessed through in-person office appointments | 4, I needed this service but could not access it",,,,,,,,,,healthcareserviceaccess,,
+neurology,adult_selfreport_baseline_form,,checkbox,Neurology,"1, I have not needed access to this service | 2, Yes, I have accessed through telehealth or telemedicine | 3, Yes, I have accessed through in-person office appointments | 4, I needed this service but could not access it",,,,,,,,,,healthcareserviceaccess,,
+substance,adult_selfreport_baseline_form,,checkbox,Substance use or recovery services,"1, I have not needed access to this service | 2, Yes, I have accessed through telehealth or telemedicine | 3, Yes, I have accessed through in-person office appointments | 4, I needed this service but could not access it",,,,,,,,,,healthcareserviceaccess,,
+psychology,adult_selfreport_baseline_form,,checkbox,Psychology,"1, I have not needed access to this service | 2, Yes, I have accessed through telehealth or telemedicine | 3, Yes, I have accessed through in-person office appointments | 4, I needed this service but could not access it",,,,,,,,,,healthcareserviceaccess,,
+other,adult_selfreport_baseline_form,,checkbox,"Other (e.g., dentist)","1, I have not needed access to this service | 2, Yes, I have accessed through telehealth or telemedicine | 3, Yes, I have accessed through in-person office appointments | 4, I needed this service but could not access it",,,,,,,,,,healthcareserviceaccess,,
+pastmonthworried,adult_selfreport_baseline_form, ,descriptive,"During the <u>PAST MONTH</u>, how worried have you been about:",,,,,,,,,,,,,
+worriedyourself,adult_selfreport_baseline_form,,radio,...being infected?,"1, Not at all | 2, Slightly | 3, Moderately | 4, Very | 5, Extremely",,,,,,,,,,,,
+worriedothers,adult_selfreport_baseline_form,,radio,...friends or family being infected?,"1, Not at all | 2, Slightly | 3, Moderately | 4, Very | 5, Extremely",,,,,,,,,,,,
+worriedphysical,adult_selfreport_baseline_form,,radio,...your <i>physical health</i> being inﬂuenced by COVID-19?,"1, Not at all | 2, Slightly | 3, Moderately | 4, Very | 5, Extremely",,,,,,,,,,,,
+worriedmental,adult_selfreport_baseline_form,,radio,"...your <i>mental/emotional health</i> being inﬂuenced by COVID-19?
+","1, Not at all | 2, Slightly | 3, Moderately | 4, Very | 5, Extremely",,,,,,,,,,,,
+pastmonthbehaviors,adult_selfreport_baseline_form, ,descriptive,During the <u>PAST MONTH</u>:,,,,,,,,,,,,,
+bedtimeweekdays_2,adult_selfreport_baseline_form,,radio,"...on average, what time did you go to bed on WEEKDAYS?","1, Before 9 pm | 2, 9 pm - 11 pm | 3, 11 pm - 1 am | 4, After 1 am",,,,,,,,,,,,
+bedtimeweekends_2,adult_selfreport_baseline_form,,radio,"...on average, what time did you go to bed on WEEKENDS?","1, Before 9 pm | 2, 9 pm - 11 pm | 3, 11 pm - 1 am | 4, After 1 am",,,,,,,,,,,,
+hoursofsleepweekdays_2,adult_selfreport_baseline_form,,radio,"...on average, how many hours per night did you sleep on WEEKDAYS?
+","1, Fewer than 6 hours | 2, 6-8 hours | 3, 8-10 hours | 4, More than 10 hours",,,,,,,,,,,,
+hoursofsleepweekends_2,adult_selfreport_baseline_form,,radio,"...on average, how many hours per night did you sleep on WEEKENDS?
+","1, Fewer than 6 hours | 2, 6-8 hours | 3, 8-10 hours | 4, More than 10 hours",,,,,,,,,,,,
+troublesleeping_2,adult_selfreport_baseline_form,,radio,...how often did you have trouble sleeping?,"1, Not at all during the past month | 2, Less than once a week | 3, Once or twice a week | 4, Three or more times a week",,,,,,,,,,,,
+sleepquality_2,adult_selfreport_baseline_form,,radio,...how would you rate your sleep quality overall?,"1, Very good | 2, Fairly good | 3, Fairly bad | 4, Very bad",,,,,,,,,,,,
+exerciseprior_2,adult_selfreport_baseline_form,,radio,"...how many days per week did you exercise (e.g., increased heart rate, breathing) for at least 30 minutes?
+
+
+","1, None | 2, 1-2 days | 3, 3-4 days | 4, 5-6 days | 5, Daily",,,,,,,,,,,,
+outdoorsprior_2,adult_selfreport_baseline_form,,radio,"...how many days per week did you spend time outdoors?
+
+
+","1, None | 2, 1-2 days | 3, 3-4 days | 4, 5-6 days | 5, Daily",,,,,,,,,,,,
+monthemotions,adult_selfreport_baseline_form, ,descriptive,During the <u>PAST MONTH</u>:,,,,,,,,,,,,,
+priorworry_2,adult_selfreport_baseline_form,,radio,"...how worried were you generally?
+
+
+","1, Not worried at all | 2, Slightly worried | 3, Moderately worried | 4, Very worried | 5, Extremely worried",,,,,,,,,,,,
+priorhappyvssad_2,adult_selfreport_baseline_form,,radio,"...how happy versus sad were you?
+
+
+","1, Very sad/depressed/unhappy | 2, Moderately sad/depressed/unhappy | 3, Neutral | 4, Moderately happy/cheerful | 5, Very happy/cheerful",,,,,,,,,,,,
+priorenjoyactivities_2,adult_selfreport_baseline_form,,radio,...how much were you able to enjoy your usual activities? ,"1, Not at all | 2, Slightly | 3, Moderately | 4, Very much | 5, A lot",,,,,,,,,,,,
+priorrelaxedvsanxious_2,adult_selfreport_baseline_form,,radio,...how relaxed versus anxious were you?,"1, Very nervous/anxious | 2, Moderately nervous/anxious | 3, Neutral | 4, Moderately relaxed/calm | 5, Very relaxed/calm",,,,,,,,,,,,
+priorfidget_2,adult_selfreport_baseline_form,,radio,...how fidgety or restless were you?,"1, Not fidgety/restless at all | 2, Slightly fidgety/restless | 3, Moderately fidgety/restless | 4, Very fidgety/restless | 5, Extremely fidgety/restless",,,,,,,,,,,,
+priorfatigue_2,adult_selfreport_baseline_form,,radio,...how fatigued or tired were you?,"1, Not fatigued or tired at all | 2, Slightly fatigued or tired | 3, Moderately fatigued or tired | 4, Very fatigued or tired | 5, Extremely fatigued or tired",,,,,,,,,,,,
+priorfocus_2,adult_selfreport_baseline_form,,radio,...how well were you able to concentrate or focus?,"1, Very unfocused/distracted | 2, Moderately unfocused/distracted | 3, Neutral | 4, Moderately focused/attentive | 5, Very focused/attentive",,,,,,,,,,,,
+priorirritable_2,adult_selfreport_baseline_form,,radio,...how irritable or easily angered were you?,"1, Not irritable or easily angered at all | 2, Slightly irritable or easily angered | 3, Moderately irritable or easily angered | 4, Very irritable or easily angered | 5, Extremely irritable or easily angered",,,,,,,,,,,,
+priorlonely_2,adult_selfreport_baseline_form,,radio,...how lonely were you?,"1, Not lonely at all | 2, Slightly lonely | 3, Moderately lonely | 4, Very lonely | 5, Extremely lonely",,,,,,,,,,,,
+priornegthoughts_2,adult_selfreport_baseline_form,,radio,"...to what extent did you have negative thoughts, thoughts about unpleasant experiences or things that make you feel bad?","1, Not at all | 2, Rarely | 3, Occasionally | 4, Often | 5, A lot of the time",,,,,,,,,,,,
+pastmonth,adult_selfreport_baseline_form, ,descriptive,During the <u>PAST MONTH:,,,,,,,,,,,,,
+emotionsinterferwork,adult_selfreport_baseline_form,,radio,"...how much have your emotions, worries, or thoughts interfered with your ability to carry out major responsibilities, such as work, school, or household management?","1, Not at all | 2, Slightly | 3, Moderately | 4, Very much | 5, Extremely",,,,,,,,,,,,
+emotionsinterferrelationships,adult_selfreport_baseline_form,,radio,"...how much have your emotions, worries, or thoughts caused problems in your close relationships?","1, Not at all | 2, Slightly | 3, Moderately | 4, Very much | 5, Extremely",,,,,,,,,,,,
+emotionsinterfersocial,adult_selfreport_baseline_form,,radio,"...how much have your emotions, worries, or thoughts caused problems with your social life?","1, Not at all | 2, Slightly | 3, Moderately | 4, Very much | 5, Extremely",,,,,,,,,,,,
+lackcompanionship,adult_selfreport_baseline_form,,radio,...how often have you felt that you lack companionship?,"1, Never | 2, Rarely | 3, Sometimes | 4, Often",,,,,,,,,,,,
+leftout,adult_selfreport_baseline_form,,radio,...how often have you felt left out?,"1, Never | 2, Rarely | 3, Sometimes | 4, Often",,,,,,,,,,,,
+isolated,adult_selfreport_baseline_form,,radio,...how often have you felt isolated from others?,"1, Never | 2, Rarely | 3, Sometimes | 4, Often",,,,,,,,,,,,
+peopletotalkto,adult_selfreport_baseline_form,,radio,"...how often have you felt that there are people you can talk to?
+
+","1, Never | 2, Rarely | 3, Sometimes | 4, Often",,,,,,,,,,,,
+peopletoturnto,adult_selfreport_baseline_form,,radio,"...how often have you felt that there are people you can turn to?
+
+","1, Never | 2, Rarely | 3, Sometimes | 4, Often",,,,,,,,,,,,
+pastmonthmedia,adult_selfreport_baseline_form, ,descriptive,"During the <u>PAST MONTH</u>, how much time PER DAY did you spend:",,,,,,,,,,,,,
+priortvmedia_2,adult_selfreport_baseline_form,,radio,"...watching TV or digital media (e.g., Netflix, YouTube, web surfing)? 
+","1, No TV or digital media | 2, Under 1 hour | 3, 1-3 hours | 4, 4-6 hours | 5, More than 6 hours",,,,,,,,,,,,
+priorsocialmedia_2,adult_selfreport_baseline_form,,radio,"...using social media (e.g., Facetime, Facebook, Instagram, Snapchat, Twitter, TikTok)?
+","1, No social media | 2, Under 1 hour | 3, 1-3 hours | 4, 4-6 hours | 5, More than 6 hours",,,,,,,,,,,,
+socialmedialonely_2,adult_selfreport_baseline_form,,radio,How lonely vs. connected did you feel while spending time on social media?,"1, 1 Mostly Lonely | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 Mostly Connected",,,,,,[priorsocialmedia_2] = '2' or [priorsocialmedia_2] = '3' or [priorsocialmedia_2] = '4' or [priorsocialmedia_2] = '5',,,,,,
+socialmediabored_2,adult_selfreport_baseline_form,,radio,How bored vs. engaged did you feel while spending time on social media?,"1, 1 Mostly Bored | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 Mostly Engaged",,,,,,[priorsocialmedia_2] = '2' or [priorsocialmedia_2] = '3' or [priorsocialmedia_2] = '4' or [priorsocialmedia_2] = '5',,,,,,
+priorvideogames_2,adult_selfreport_baseline_form,,radio,"...playing video games?
+","1, No video games | 2, Under 1 hour | 3, 1-3 hours | 4, 4-6 hours | 5, More than 6 hours",,,,,,,,,,,,
+alcohol2,adult_selfreport_baseline_form,"During the <u>PAST MONTH</u>, how often did you use:",radio,Alcohol?,"1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesmonth,,
+vape2,adult_selfreport_baseline_form,,radio,"Vaping products (e.g. electronic cigarettes, vape pens, e-hookah, e-cigars, e-pipes, hookah pen)?","1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesmonth,,
+cigarettes2,adult_selfreport_baseline_form,,radio,"Cigarettes, even one or two puffs?","1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesmonth,,
+tobacco2,adult_selfreport_baseline_form,,radio,"Other tobacco products (e.g., cigars, cigarillos, dissolvables, hookah, pipes, smokeless tobacco, waterpipe)?","1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesmonth,,
+marijuana2,adult_selfreport_baseline_form,,radio,"Marijuana/cannabis (e.g., weed, pot, joint, blunt, pipe, bong, hashish, hash oil)?","1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesmonth,,
+heroin2,adult_selfreport_baseline_form,,radio,Heroin?,"1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesmonth,,
+cocaine2,adult_selfreport_baseline_form,,radio,"Cocaine, crack, amphetamine, methamphetamine, hallucinogens, or ecstasy?","1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesmonth,,
+rxpain2,adult_selfreport_baseline_form,,radio,"Prescription pain relievers (e.g., hydrocodone, oxycodone, morphine, codeine) in any way <u>a doctor did not direct you to use them?","1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesmonth,,
+rxsleep2,adult_selfreport_baseline_form,,radio,"Prescription sleeping medications or sedatives/hypnotics (e.g., alprazolam, diazepam, estazolam, lorazepam, zolpidem) in any way <u>a doctor did not direct you to use them?","1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesmonth,,
+rxstimulants2,adult_selfreport_baseline_form,,radio,"Prescription stimulants (e.g., dextroamphetamine, dexmethylphenidate, methylphenidate) in any way <u>a doctor did not direct you to use them?","1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesmonth,,
+rxother2,adult_selfreport_baseline_form,,radio,Other prescription medications in any way <u>a doctor did not direct you to use them?,"1, Not at all | 2, Rarely | 3, Once a month | 4, Several times a month | 5, Once a week | 6, Several times a week | 7, Once a day | 8, More than once a day",,,,,,,,,,substancesmonth,,
+substanceproblem2,adult_selfreport_baseline_form,,yesno,Did your use of alcohol or other drugs cause any problems for you?,,,,,,,[alcohol2] = '3' or [alcohol2] = '4' or [alcohol2] = '5' or [alcohol2] = '6' or [alcohol2] = '7' or [vape2] = '3' or [vape2] = '4' or [vape2] = '5' or [vape2] = '6' or [vape2] = '7' or [vape2] = '8' or [cigarettes2] = '3' or [cigarettes2] = '4' or [cigarettes2] = '5' or [cigarettes2] = '6' or [cigarettes2] = '7' or [cigarettes2] = '8' or [tobacco2] = '3' or [tobacco2] = '4' or [tobacco2] = '5' or [tobacco2] = '6' or [tobacco2] = '7' or [tobacco2] = '8' or [marijuana2] = '3' or [marijuana2] = '4' or [marijuana2] = '5' or [marijuana2] = '6' or [marijuana2] = '7' or [marijuana2] = '8' or [heroin2] = '3' or [heroin2] = '4' or [heroin2] = '5' or [heroin2] = '6' or [heroin2] = '7' or [heroin2] = '8' or [cocaine2] = '3' or [cocaine2] = '4' or [cocaine2] = '5' or [cocaine2] = '6' or [cocaine2] = '7' or [cocaine2] = '8' or [rxpain2] = '3' or [rxpain2] = '4' or [rxpain2] = '5' or [rxpain2] = '6' or [rxpain2] = '7' or [rxpain2] = '8' or [rxsleep2] = '3' or [rxsleep2] = '4' or [rxsleep2] = '5' or [rxsleep2] = '6' or [rxsleep2] = '7' or [rxsleep2] = '8' or [rxstimulants2] = '3' or [rxstimulants2] = '4' or [rxstimulants2] = '5' or [rxstimulants2] = '6' or [rxstimulants2] = '7' or [rxstimulants2] = '8' or [rxother2] = '3' or [rxother2] = '4' or [rxother2] = '5' or [rxother2] = '6' or [rxother2] = '7' or [rxother2] = '8',,,,,,
+substancecomplaint2,adult_selfreport_baseline_form,,yesno,Has anyone complained about your use of alcohol or other drugs?,,,,,,,[alcohol2] = '3' or [alcohol2] = '4' or [alcohol2] = '5' or [alcohol2] = '6' or [alcohol2] = '7' or [vape2] = '3' or [vape2] = '4' or [vape2] = '5' or [vape2] = '6' or [vape2] = '7' or [vape2] = '8' or [cigarettes2] = '3' or [cigarettes2] = '4' or [cigarettes2] = '5' or [cigarettes2] = '6' or [cigarettes2] = '7' or [cigarettes2] = '8' or [tobacco2] = '3' or [tobacco2] = '4' or [tobacco2] = '5' or [tobacco2] = '6' or [tobacco2] = '7' or [tobacco2] = '8' or [marijuana2] = '3' or [marijuana2] = '4' or [marijuana2] = '5' or [marijuana2] = '6' or [marijuana2] = '7' or [marijuana2] = '8' or [heroin2] = '3' or [heroin2] = '4' or [heroin2] = '5' or [heroin2] = '6' or [heroin2] = '7' or [heroin2] = '8' or [cocaine2] = '3' or [cocaine2] = '4' or [cocaine2] = '5' or [cocaine2] = '6' or [cocaine2] = '7' or [cocaine2] = '8' or [rxpain2] = '3' or [rxpain2] = '4' or [rxpain2] = '5' or [rxpain2] = '6' or [rxpain2] = '7' or [rxpain2] = '8' or [rxsleep2] = '3' or [rxsleep2] = '4' or [rxsleep2] = '5' or [rxsleep2] = '6' or [rxsleep2] = '7' or [rxsleep2] = '8' or [rxstimulants2] = '3' or [rxstimulants2] = '4' or [rxstimulants2] = '5' or [rxstimulants2] = '6' or [rxstimulants2] = '7' or [rxstimulants2] = '8' or [rxother2] = '3' or [rxother2] = '4' or [rxother2] = '5' or [rxother2] = '6' or [rxother2] = '7' or [rxother2] = '8',,,,,,
+curiouscigarette,adult_selfreport_baseline_form,,radio,Have you ever been curious about smoking a cigarette?,"1, Very curious | 2, Somewhat curious | 3, A little curious | 4, Not at all curious",,,,,,[cigarettesyn] = '0' and [years]>12  and [years]<25,,,,,,
+smokesoon,adult_selfreport_baseline_form,,radio,Do you think you will smoke a cigarette soon?,"1, Definitely yes | 2, Probably yes | 3, Probably not | 4, Definitely not",,,,,,[cigarettesyn] = '0' and [years]>12  and [years]<25,,,,,,
+friendscigarette,adult_selfreport_baseline_form,,radio,"If one of your best friends were to offer you a cigarette, would you smoke it?","1, Definitely yes | 2, Probably yes | 3, Probably not | 4, Definitely not",,,,,,[cigarettesyn] = '0' and [years]>12  and [years]<25,,,,,,
+timestamp2,adult_selfreport_baseline_form,,text,,,,,,,,,,,,,,@NOW @HIDDEN
