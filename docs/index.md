@@ -4,5 +4,4 @@
 
 Below are HTML versions of data notebooks that supplement the published  and supplemental information.
 
- - [Data cleaning procedure and visualization](https://ianeisenberg.github.io/Self_Regulation_Ontology/cleaning_visualization.html). Includes visualization of outliers and final DV distributions
- - [Supplemental Plots](https://ianeisenberg.github.io/Self_Regulation_Ontology/supplement_figures.html). Full factor loading matrices, detailed plots of individual clusters and visualizations of factor/cluster robustness
+ - [Supplemental Plots](https://matildevaghi.github.io/self_regulation_COVID-19/sro_covid_analyses_supplementary.html). Full factor loading matrices
