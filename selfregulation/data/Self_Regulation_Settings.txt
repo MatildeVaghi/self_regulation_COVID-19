@@ -1,0 +1,6 @@
+expfactory_token:https://github.com/IanEisenberg/expfactory-analysis
+base_directory:/SRO
+results_directory:/SRO/Results
+data_directory:/SRO/Data
+data_master:/SRO/Data_master
+
