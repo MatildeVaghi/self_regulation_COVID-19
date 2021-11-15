@@ -1,0 +1,131 @@
+{
+    "DaysHalfLastMonth_pre": {
+        "Description": "Q4: Not counting the days you reported in response to Q3, how many days in the 30 days prior to the onset of the Coronavirus/COVID-19 crisis in your area were you able to do only half or less of what you would normally have been able to do, because of these feelings?<br><br><strong>(Number of Days)</strong>",
+        "Levels": {}
+    },
+    "DaysLostLastMonth_pre": {
+        "Description": "Q3: During the 30 days prior to the onset of the Coronavirus/COVID-19 crisis in your area, how many days out of 30 were you totally unable to work or carry out your normal activities because of these feelings?<br><br><strong>(Number of Days)</strong>",
+        "Levels": {}
+    },
+    "DaysPhysicalHealthFeelings_pre": {
+        "Description": "Q6: During the 30 days prior to the onset of the Coronavirus/COVID-19 crisis in your area, how often have physical health problems been the main cause of these feelings? ",
+        "Levels": {
+            "1": "All of the time",
+            "2": " Most of the time",
+            "3": " Some of the time",
+            "4": " A little of the time",
+            "5": " None of the time"
+        }
+    },
+    "Depressed_pre": {
+        "Description": "… so depressed that nothing could cheer you up?",
+        "Levels": {
+            "1": "All of the time",
+            "2": " Most of the time",
+            "3": " Some of the time",
+            "4": " A little of the time",
+            "5": " None of the time"
+        }
+    },
+    "DiseaseDiagnosesOther_pre": {
+        "Description": "If you responded “other” to the above question, please describe:",
+        "Levels": {},
+        "Nominal": true
+    },
+    "DiseaseDiagnoses_pre": {
+        "Description": "Do you have or have you ever been diagnosed with any of the following medical conditions (check all that apply)?",
+        "Levels": {}
+    },
+    "DoctorVisitsLastMonth_pre": {
+        "Description": "Q5: During the 30 days prior to the onset of the Coronavirus/COVID-19 crisis in your area, how many times did you see a doctor or other health professional about these feelings?<br><br><strong>(Number of Times)</strong>",
+        "Levels": {}
+    },
+    "EverythingIsEffort_pre": {
+        "Description": "… that everything was an effort?",
+        "Levels": {
+            "1": "All of the time",
+            "2": " Most of the time",
+            "3": " Some of the time",
+            "4": " A little of the time",
+            "5": " None of the time"
+        }
+    },
+    "Hopeless_pre": {
+        "Description": "… hopeless?",
+        "Levels": {
+            "1": "All of the time",
+            "2": " Most of the time",
+            "3": " Some of the time",
+            "4": " A little of the time",
+            "5": " None of the time"
+        }
+    },
+    "Last30DaysUsual_pre": {
+        "Description": "Q2: The last six questions asked about feelings that might have occurred during the 30 days prior to the onset of the Coronavirus/COVID-19 crisis in your area. Taking them altogether, did these feelings occur more often in 30 days prior to the onset of the Coronavirus/COVID-19 crisis in your area than is usual for you, about the same as usual, or less often than usual? (If you never have any of these feelings, select “about the same as usual”) ",
+        "Levels": {
+            "1": "A lot",
+            "2": " Some<br><strong>More often than usual<br>←</strong>",
+            "3": " A little",
+            "4": " About the same as usual",
+            "5": " A little ",
+            "6": " Some<br><strong>Less often than usual<br>→</strong>",
+            "7": " A lot"
+        }
+    },
+    "MeasurementToolMetadata": {
+        "Description": "Health",
+        "TermURL": ""
+    },
+    "Nervous_pre": {
+        "Description": "… nervous?",
+        "Levels": {
+            "1": "All of the time",
+            "2": " Most of the time",
+            "3": " Some of the time",
+            "4": " A little of the time",
+            "5": " None of the time"
+        }
+    },
+    "NeurologicalDiagnosesDescribe_pre": {
+        "Description": "If you responded “yes” to the above question, please describe:",
+        "Levels": {},
+        "Nominal": true
+    },
+    "NeurologicalDiagnoses_pre": {
+        "Description": "Have you been diagnosed with any neurological disorder (e.g. Alzheimer's, Parkinson's)?",
+        "Levels": {
+            " 0": " No",
+            "1": "Yes"
+        }
+    },
+    "PsychDiagnosesOther_pre": {
+        "Description": "If you responded “other” to the above question, please describe:",
+        "Levels": {},
+        "Nominal": true
+    },
+    "PsychDiagnoses_pre": {
+        "Description": "Do you have or have you ever been diagnosed with any of the following psychological disorders (check all that apply)",
+        "Levels": {},
+        "Nominal": true
+    },
+    "RestlessFidgety_pre": {
+        "Description": "… restless or fidgety?",
+        "Levels": {
+            "1": "All of the time",
+            "2": " Most of the time",
+            "3": " Some of the time",
+            "4": " A little of the time",
+            "5": " None of the time"
+        }
+    },
+    "Worthless_pre": {
+        "Description": "… worthless?",
+        "Levels": {
+            "1": "All of the time",
+            "2": " Most of the time",
+            "3": " Some of the time",
+            "4": " A little of the time",
+            "5": " None of the time"
+        }
+    }
+}

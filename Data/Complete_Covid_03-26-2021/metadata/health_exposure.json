@@ -1,0 +1,175 @@
+{
+    "MeasurementToolMetadata": {
+        "Description": "crisis_questionnaire:",
+        "TermURL": ""
+    },
+    "crisis_covid_impact_2week_exposure": {
+        "Description": "text of the question",
+        "Levels": {
+            "0": [
+                " Not to my knowledge"
+            ],
+            "1": [
+                " Yes someone with possible symptoms but no diagnosis by doctor",
+                "Yes someone with positive test",
+                " Yes someone with medical diagnosis but not test"
+            ]
+        },
+        "LevelsOrig": {
+            " Not to my knowledge": "0",
+            " Yes someone with medical diagnosis but not test": "1",
+            " Yes someone with possible symptoms but no diagnosis by doctor": "1",
+            "Yes someone with positive test": "1"
+        },
+        "Nominal": true
+    },
+    "crisis_covid_impact_any_family_impact": {
+        "Description": "have any of the following happened to your family members because of Coronavirus/COVID-19? ",
+        "Levels": {
+            "0": [
+                " None of the above"
+            ],
+            "1": [
+                " Put into self-qurantine without symptoms",
+                " Put into self-quranting with symptoms",
+                "Fallen ill physically",
+                " Hospitalized",
+                " Passed away",
+                " Lostor been laid off from job",
+                " Reduced ability to earn money"
+            ]
+        },
+        "LevelsOrig": {
+            " Hospitalized": "1",
+            " Lostor been laid off from job": "1",
+            " None of the above": "0",
+            " Passed away": "1",
+            " Put into self-qurantine without symptoms": "1",
+            " Put into self-quranting with symptoms": "1",
+            " Reduced ability to earn money": "1",
+            "Fallen ill physically": "1"
+        },
+        "Nominal": true
+    },
+    "crisis_covid_impact_family_member_diagnosed": {
+        "Description": "has anyone in your family been diagnosed with Coronavirus/COVID-19?",
+        "Levels": {
+            "0": [
+                " No"
+            ],
+            "1": [
+                " Yes non-household member",
+                "Yes member of household"
+            ]
+        },
+        "LevelsOrig": {
+            " No": "0",
+            " Yes non-household member": "1",
+            "Yes member of household": "1"
+        },
+        "Nominal": true
+    },
+    "crisis_covid_impact_symptoms_count": {
+        "Description": "Symptoms count?",
+        "Levels": {
+            "0": [
+                " Other "
+            ],
+            "1": [
+                " Cough",
+                "Fever",
+                " Fatigue",
+                " Sore throat",
+                " Loss of taste of smell",
+                " Shortness of breadth",
+                " Eye infection"
+            ]
+        },
+        "LevelsOrig": {
+            " Cough": "1",
+            " Eye infection": "1",
+            " Fatigue": "1",
+            " Loss of taste of smell": "1",
+            " Other ": "0",
+            " Shortness of breadth": "1",
+            " Sore throat": "1",
+            "Fever": "1"
+        },
+        "Nominal": true
+    },
+    "crisis_covid_worries_mental": {
+        "Description": "… how worried have you been about your Mental/Emotional health being influenced by Coronavirus/COVID-19?",
+        "Levels": {
+            "1": "Not at all",
+            "2": " Slightly",
+            "3": " Moderately",
+            "4": " Very",
+            "5": " Extremely"
+        }
+    },
+    "crisis_covid_worries_others": {
+        "Description": "… how worried have you been about friends or family being infected?",
+        "Levels": {
+            "1": "Not at all",
+            "2": " Slightly",
+            "3": " Moderately",
+            "4": " Very",
+            "5": " Extremely"
+        }
+    },
+    "crisis_covid_worries_physical": {
+        "Description": "… how worried have you been about your physical health being influenced by Coronavirus/COVID-19?",
+        "Levels": {
+            "1": "Not at all",
+            "2": " Slightly",
+            "3": " Moderately",
+            "4": " Very",
+            "5": " Extremely"
+        }
+    },
+    "crisis_covid_worries_positive_changes": {
+        "Description": "Has the Coronavirus/COVID-19 crisis in your area led to any positive changes in your life?",
+        "Levels": {
+            "1": "None",
+            "2": " Only a few",
+            "3": " Some "
+        }
+    },
+    "crisis_covid_worries_reading": {
+        "Description": "How much are you reading, or talking about Coronavirus/COVID-19?",
+        "Levels": {
+            "1": "Never",
+            "2": " Rarely",
+            "3": " Occasionally",
+            "4": " Often",
+            "5": " Most of the time "
+        }
+    },
+    "crisis_covid_worries_self": {
+        "Description": "… how worried have you been about being infected?",
+        "Levels": {
+            "1": "Not at all",
+            "2": " Slightly",
+            "3": " Moderately",
+            "4": " Very",
+            "5": " Extremely"
+        }
+    },
+    "crisis_health_exposure_survey__covid_15": {
+        "Description": "If answered \"Only a few\" or \"Some\"  to question \"Has the Coronavirus/COVID-19 crisis in your area led to any positive changes in your life?\" please specify:",
+        "Levels": {}
+    },
+    "crisis_health_exposure_survey__covid_3_options": {
+        "Description": "… have you been suspected of having Coronavirus/COVID-19 infection?",
+        "Levels": {
+            "1": " No symptoms or signs",
+            "2": " Yes have had some possible symptoms but no diagnosis by doctor",
+            "3": " Yes medical diagnosis but no test",
+            "4": "Yes has positive test"
+        }
+    },
+    "crisis_health_exposure_survey__covid_5": {
+        "Description": "If you chose 'Other' please specify",
+        "Levels": {}
+    }
+}

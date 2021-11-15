@@ -1,0 +1,100 @@
+{
+    "DaysHalfLastMonth_post": {
+        "Description": "Q4: Not counting the days you reported in response to Q3, how many days in the PAST TWO WEEKS were you able to do only half or less of what you would normally have been able to do, because of these feelings?<br><br><strong>(Number of Days)</strong>",
+        "Levels": {}
+    },
+    "DaysLostLastMonth_post": {
+        "Description": "Q3: During PAST TWO WEEKS, how many days out of 14 were you totally unable to work or carry out your normal activities because of these feelings?<br><br><strong>(Number of Days)</strong>",
+        "Levels": {}
+    },
+    "DaysPhysicalHealthFeelings_post": {
+        "Description": "Q6: During the PAST TWO WEEKS, how often have physical health problems been the main cause of these feelings? ",
+        "Levels": {
+            "1": "All of the time",
+            "2": " Most of the time",
+            "3": " Some of the time",
+            "4": " A little of the time",
+            "5": " None of the time"
+        }
+    },
+    "Depressed_post": {
+        "Description": "… so depressed that nothing could cheer you up?",
+        "Levels": {
+            "1": "All of the time",
+            "2": " Most of the time",
+            "3": " Some of the time",
+            "4": " A little of the time",
+            "5": " None of the time"
+        }
+    },
+    "DoctorVisitsLastMonth_post": {
+        "Description": "Q5: During the PAST TWO WEEKS, how many times did you see a doctor or other health professional about these feelings?<br><br><strong>(Number of Times)</strong>",
+        "Levels": {}
+    },
+    "EverythingIsEffort_post": {
+        "Description": "… that everything was an effort?",
+        "Levels": {
+            "1": "All of the time",
+            "2": " Most of the time",
+            "3": " Some of the time",
+            "4": " A little of the time",
+            "5": " None of the time"
+        }
+    },
+    "Hopeless_post": {
+        "Description": "… hopeless?",
+        "Levels": {
+            "1": "All of the time",
+            "2": " Most of the time",
+            "3": " Some of the time",
+            "4": " A little of the time",
+            "5": " None of the time"
+        }
+    },
+    "Last30DaysUsual_post": {
+        "Description": "Q2: The last six questions asked about feelings that might have occurred during PAST TWO WEEKS. Taking them altogether, did these feelings occur more often in PAST TWO WEEKS than is usual for you, about the same as usual, or less often than usual? (If you never have any of these feelings, select “about the same as usual”) ",
+        "Levels": {
+            "1": "A lot",
+            "2": " Some<br><strong>More often than usual<br>←</strong>",
+            "3": " A little",
+            "4": " About the same as usual",
+            "5": " A little ",
+            "6": " Some<br><strong>Less often than usual<br>→</strong>",
+            "7": " A lot"
+        }
+    },
+    "MeasurementToolMetadata": {
+        "Description": "Health",
+        "TermURL": ""
+    },
+    "Nervous_post": {
+        "Description": "… nervous?",
+        "Levels": {
+            "1": "All of the time",
+            "2": " Most of the time",
+            "3": " Some of the time",
+            "4": " A little of the time",
+            "5": " None of the time"
+        }
+    },
+    "RestlessFidgety_post": {
+        "Description": "… restless or fidgety?",
+        "Levels": {
+            "1": "All of the time",
+            "2": " Most of the time",
+            "3": " Some of the time",
+            "4": " A little of the time",
+            "5": " None of the time"
+        }
+    },
+    "Worthless_post": {
+        "Description": "… worthless?",
+        "Levels": {
+            "1": "All of the time",
+            "2": " Most of the time",
+            "3": " Some of the time",
+            "4": " A little of the time",
+            "5": " None of the time"
+        }
+    }
+}

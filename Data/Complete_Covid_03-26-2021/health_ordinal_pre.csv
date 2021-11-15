@@ -1,0 +1,108 @@
+,Nervous_pre,Hopeless_pre,RestlessFidgety_pre,Depressed_pre,EverythingIsEffort_pre,Worthless_pre,Last30DaysUsual_pre,DaysLostLastMonth_pre,DaysHalfLastMonth_pre,DoctorVisitsLastMonth_pre,NeurologicalDiagnoses_pre,DiseaseDiagnoses_pre,DaysPhysicalHealthFeelings_pre
+s001,5,5,5,5,5,5,4,,,, 0, None,
+s002,3,4,4,4,5,5,1,0,0,0, 0,Type II diabetes,5
+s003,2,1,4,2,1,1,4,10,10,0, 0, Arthritis,3
+s004,5,5,5,5,5,5,4,0,0,0, 0, High Blood Pressure,5
+s005,5,5,5,5,5,5,4,0,0,0, 0, Serious stomach or bowel problems,5
+s007,4,5,5,5,5,5,4,0,0,0, 0, Seasonal allergies,5
+s008,5,5,5,5,5,5,4,0,0,0, 0, None,5
+s010,3,4,4,4,3,4,4,4,3,0, 0, None,4
+s012,5,5,5,5,5,5,4,,,, 0, High Blood Pressure,
+s013,4,4,5,2,2,5,3,1,3,0, 0, High Blood Pressure,3
+s014,5,5,5,5,5,5,4,0,0,0, 0, Immune disorder,5
+s016,5,5,5,5,5,5,4,0,0,0, 0, Cancer,5
+s017,5,5,5,5,5,5,4,,,, 0, None,
+s019,5,5,5,5,5,5,4,0,0,0, 0, Other,5
+s020,3,4,3,3,4,5,4,7,5,1, 0, High Blood Pressure,4
+s021,3,4,3,5,5,5,2,0,0,0, 0, None,5
+s022,5,5,5,5,5,5,4,0,0,0, 0, Seasonal allergies,5
+s023,1,1,3,2,1,1,4,10,9,0, 0, None,3
+s024,4,4,5,4,4,4,4,,,, 0, None,5
+s025,3,5,5,4,3,4,4,0,0,0, 0, None,5
+s026,4,1,2,4,4,1,4,0,0,0, 0, None,
+s027,5,5,5,5,5,5,4,,,, 0, None,5
+s029,4,5,5,5,5,5,4,0,0,0, 0, None,5
+s030,3,4,4,5,4,4,4,0,0,0, 0, None,4
+s033,5,5,5,5,5,5,4,,,, 0, None,
+s034,5,2,2,3,4,2,4,0,0,0, 0, Serious stomach or bowel problems,5
+s035,4,5,5,5,5,5,4,0,0,0, 0, None,5
+s036,4,4,5,5,4,5,5,0,0,0, 0, None,5
+s038,4,5,4,5,5,5,4,0,0,-1, 0, Frequent or very bad headaches,5
+s040,4,5,4,5,4,5,4,0,0,0, 0, High Blood Pressure,5
+s041,1,1,1,1,2,1,4,0,0,0, 0, None,5
+s042,5,4,5,4,5,4,4,3,3,0, 0,Type II diabetes,3
+s043,5,5,5,5,5,5,4,,,, 0, None,
+s044,5,5,5,5,5,5,4,0,0,0, 0, None,5
+s046,3,4,4,5,4,4,4,0,0,0, 0, None,5
+s047,3,3,3,3,2,3,4,0,0,0, 0, High Blood Pressure,5
+s049,4,5,4,5,5,5,4,0,0,0, 0, None,5
+s050,2,4,3,3,3,3,3,0,0,0, 0, Serious acne or skin problems,5
+s051,4,5,3,5,5,5,4,0,0,0, 0, None,5
+s052,3,3,3,3,2,3,4,2,6,0, 0, Sleep Apnea,5
+s053,5,5,5,5,5,5,4,,,, 0, Seasonal allergies,5
+s054,3,3,3,4,4,4,4,4,2,2, 0, None,4
+s055,4,5,4,5,5,5,4,,,, 0, None,5
+s056,4,4,5,5,5,5,4,0,0,0, 0,Type II diabetes,5
+s057,5,5,5,5,4,5,4,0,3,1, 0,Type II diabetes,1
+s059,4,5,4,5,5,5,3,0,2,0, 0, None,5
+s063,4,4,4,4,3,5,4,2,4,0, 0, Frequent or very bad headaches,2
+s065,3,4,3,4,3,5,3,2,15,0, 0, High Blood Pressure,4
+s066,5,5,5,5,5,5,4,2,0,0, 0, Serious acne or skin problems,5
+s067,4,5,3,5,4,5,4,0,0,0, 0, Seasonal allergies,5
+s068,4,5,5,5,5,5,4,0,0,0, 0, None,5
+s070,3,4,5,4,4,5,4,0,0,0, 0, None,5
+s071,5,5,5,5,5,5,4,0,0,0, 0, Asthma or other lung problems,5
+s072,5,5,5,5,5,5,4,,,, 0, None,
+s074,3,4,3,5,4,5,3,0,0,0, 0, None,5
+s075,4,5,5,5,5,5,4,0,0,0, 0, None,5
+s076,4,5,5,5,5,5,4,0,0,0, 0, None,5
+s078,5,3,2,3,2,1,4,0,3,0, 0, Asthma or other lung problems,4
+s079,4,4,5,4,4,3,4,,,0, 0, None,5
+s080,5,5,4,5,5,5,4,,,0, 0, Seasonal allergies,5
+s081,5,5,5,5,5,5,3,0,0,0, 0, None,5
+s082,3,4,4,3,2,4,4,10,10,0, 0, Seasonal allergies,3
+s084,5,4,3,4,4,4,4,0,0,0, 0, None,5
+s085,2,3,3,3,2,3,4,4,5,0, 0, None,4
+s086,2,2,4,2,2,3,4,5,10,0, 0, High Blood Pressure,2
+s087,4,5,5,5,4,5,4,0,0,0, 0, None,5
+s088,4,5,5,5,5,5,4,0,0,0, 0, Seasonal allergies,5
+s089,5,5,5,5,5,5,4,0,0,0, 0, None,5
+s090,5,5,5,5,5,5,4,,,, 0, None,
+s091,5,5,5,5,5,5,4,,,, 0, None,
+s092,5,5,5,5,5,5,4,0,0,0, 0, None,5
+s093,5,5,5,5,5,5,4,,,0, 0, None,5
+s094,4,3,4,4,4,3,4,2,3,0, 0, Seasonal allergies,5
+s095,5,4,5,4,5,4,4,0,0,2, 0, None,5
+s096,4,4,4,5,5,5,3,0,0,0, 0, None,5
+s097,4,5,5,5,4,5,4,0,0,0, 0, None,5
+s098,4,3,4,5,4,3,3,0,0,0, 0, Cancer,3
+s099,3,2,4,3,2,3,4,3,5,0, 0, Serious stomach or bowel problems,4
+s100,5,5,5,5,5,5,4,,,, 0, None,5
+s101,4,5,4,5,5,5,3,0,0,0, 0, Sleep Apnea,5
+s102,5,5,5,5,5,5,4,0,0,0, 0, None,5
+s103,4,5,5,5,5,5,4,0,0,0, 0, None,5
+s104,5,4,5,2,2,4,5,0,0,0, 0, Seasonal allergies,3
+s107,3,4,4,5,4,5,4,3,15,0,1, Immune disorder,3
+s108,4,2,3,3,2,3,4,0,0,0, 0, Heart Disease,3
+s109,4,5,4,5,4,4,4,0,1,0, 0, Seasonal allergies,5
+s111,4,5,4,5,5,5,4,0,0,1,1,Type II diabetes,4
+s113,3,3,2,4,4,3,4,20,10,3, 0, High Blood Pressure,3
+s114,4,5,4,5,5,5,4,0,0,0, 0, None,5
+s115,4,5,4,4,4,5,4,0,2,0, 0, None,5
+s116,3,3,5,4,3,3,4,2,4,0, 0, Epilepsy or seizures,5
+s117,5,5,5,5,5,5,4,0,0,0, 0, Seasonal allergies,5
+s118,4,4,4,5,4,4,4,0,0,0, 0, Seasonal allergies,5
+s119,4,5,5,5,5,5,4,0,0,0, 0, None,5
+s120,4,5,5,5,5,5,4,0,0,0, 0, None,5
+s121,4,4,4,4,4,4,4,0,2,0, 0, None,5
+s123,5,5,5,5,5,5,4,0,0,0, 0, None,5
+s124,3,5,3,5,5,5,4,0,0,0, 0, None,5
+s125,2,3,3,5,4,5,4,0,6,0, 0, Seasonal allergies,5
+s126,4,4,3,4,3,4,4,0,0,0, 0, High Blood Pressure,2
+s127,4,4,5,5,4,5,4,0,0,0, 0, None,5
+s128,4,5,5,4,4,5,4,0,0,0, 0, None,5
+s129,4,5,4,5,4,5,4,0,0,0, 0, None,5
+s130,2,3,3,4,3,2,4,,,, 0, None,
+s131,4,4,4,4,4,3,4,3,5,1, 0, Asthma or other lung problems,2
+s134,3,3,4,2,2,3,4,,,, 0, High Blood Pressure,
+s136,3,3,4,4,2,3,4,20,5,0, 0, None,5

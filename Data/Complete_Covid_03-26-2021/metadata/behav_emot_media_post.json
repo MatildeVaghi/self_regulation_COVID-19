@@ -1,0 +1,299 @@
+{
+    "MeasurementToolMetadata": {
+        "Description": "crisis_questionnaire:",
+        "TermURL": ""
+    },
+    "crisis_behav_emot_media_post_survey__covid_24_options": {
+        "Description": "text of the question",
+        "Levels": {}
+    },
+    "crisis_behav_emot_media_post_survey__covid_25": {
+        "Description": "If you responded “other” to the above question, please describe:",
+        "Levels": {}
+    },
+    "crisis_behav_emot_media_post_survey__covid_26": {
+        "Description": "Please describe anything else that concerns you about the impact of Coronavirus/COVID-19 on you, your friends, or your family.",
+        "Levels": {}
+    },
+    "crisis_behav_emot_media_post_survey__covid_27": {
+        "Description": "Please provide any comments that you would like about this survey and/or related topics.",
+        "Levels": {}
+    },
+    "crisis_behav_media_post_bed_weekdays": {
+        "Description": "… on average, what time did you go to bed on WEEKDAYS? ",
+        "Levels": {
+            "1": "Before 9 pm",
+            "2": " 9 pm-11 pm",
+            "3": " 11 pm-1 am",
+            "4": " After 1 am "
+        }
+    },
+    "crisis_behav_media_post_bed_weekends": {
+        "Description": "… on average, what time did you go to bed on WEEKENDS? ",
+        "Levels": {
+            "1": "Before 9 pm",
+            "2": " 9 pm-11 pm",
+            "3": " 11 pm-1 am",
+            "4": " After 1 am "
+        }
+    },
+    "crisis_behav_media_post_exercise": {
+        "Description": "… how many days per week did you exercise (e.g., increased  heart rate) for at least 30 minutes? ",
+        "Levels": {
+            "1": "None",
+            "2": " 1-2 days",
+            "3": " 3-4 days",
+            "4": " 5-6 days",
+            "5": " Daily"
+        }
+    },
+    "crisis_behav_media_post_hours_sleep_weekdays": {
+        "Description": "… on average, how many hours per night did you sleep on WEEKDAYS? ",
+        "Levels": {
+            "1": "<6 hours",
+            "2": " 6-8 hours",
+            "3": " 8-10 hours",
+            "4": " > 10 hours "
+        }
+    },
+    "crisis_behav_media_post_hours_sleep_weekend": {
+        "Description": "… on average, how many hours per night did you sleep on WEEKENDS? ",
+        "Levels": {
+            "1": "<6 hours",
+            "2": " 6-8 hours",
+            "3": " 8-10 hours",
+            "4": " > 10 hours "
+        }
+    },
+    "crisis_behav_media_post_social_media": {
+        "Description": "… how much time per day did you spend using social media (e.g., Facetime, Facebook, Instagram, Snapchat, Twitter, TikTok)?",
+        "Levels": {
+            "1": "No social media",
+            "2": " Under 1 hour",
+            "3": " 1-3 hours",
+            "4": " 4-6 hours",
+            "5": " More than 6 hours"
+        },
+        "LevelsOrig": {
+            "0": "No social media",
+            "1": " Under 1 hour",
+            "2": " 1-3 hours",
+            "3": " 4-6 hours",
+            "4": " More than 6 hours"
+        }
+    },
+    "crisis_behav_media_post_time_outdoor": {
+        "Description": "… how many days per week did you spend time outdoors?",
+        "Levels": {
+            "1": "None",
+            "2": " 1-2 days",
+            "3": " 3-4 days",
+            "4": " 5-6 days",
+            "5": " Daily"
+        }
+    },
+    "crisis_behav_media_post_tv_media": {
+        "Description": "… how much time per day did you spend watching TV or digital media (e.g., Netflix, YouTube, web surfing)? ",
+        "Levels": {
+            "1": "No TV or digital media",
+            "2": " Under 1 hour",
+            "3": " 1-3 hours",
+            "4": " 4-6 hours",
+            "5": " More than 6 hours"
+        },
+        "LevelsOrig": {
+            "0": "No TV or digital media",
+            "1": " Under 1 hour",
+            "2": " 1-3 hours",
+            "3": " 4-6 hours",
+            "4": " More than 6 hours"
+        }
+    },
+    "crisis_behav_media_post_videogames": {
+        "Description": "… how much time per day did you spend, playing video games?",
+        "Levels": {
+            "1": "No video games",
+            "2": " Under 1 hour",
+            "3": " 1-3 hours",
+            "4": " 4-6 hours",
+            "5": " More than 6 hours"
+        },
+        "LevelsOrig": {
+            "0": "No video games",
+            "1": " Under 1 hour",
+            "2": " 1-3 hours",
+            "3": " 4-6 hours",
+            "4": " More than 6 hours"
+        }
+    },
+    "crisis_mood_states_post_enjoy_activities": {
+        "Description": "… how much were you able to enjoy your usual activities? ",
+        "Levels": {
+            "1": "Not at all",
+            "2": " Slightly",
+            "3": " Moderately",
+            "4": " Very much",
+            "5": " A lot"
+        },
+        "LevelsOrig": {
+            "0": "Not at all",
+            "1": " Slightly",
+            "2": " Moderately",
+            "3": " Very much",
+            "4": " A lot"
+        }
+    },
+    "crisis_mood_states_post_fatigue": {
+        "Description": "… how fatigued or tired were you?",
+        "Levels": {
+            "1": "Not fatigued or tired at all",
+            "2": " Slightly fatigued or tired ",
+            "3": " Moderately fatigued or tired",
+            "4": " Vary fatigued or tired",
+            "5": " Extremely fatigued or tired"
+        },
+        "LevelsOrig": {
+            "0": "Not fatigued or tired at all",
+            "1": " Slightly fatigued or tired ",
+            "2": " Moderately fatigued or tired",
+            "3": " Vary fatigued or tired",
+            "4": " Extremely fatigued or tired"
+        }
+    },
+    "crisis_mood_states_post_fidget": {
+        "Description": "… how fidgety or restless were you?",
+        "Levels": {
+            "1": "Not fidgety/restless at all",
+            "2": " Slightly fidgety/restless",
+            "3": " Moderately fidgety/restless",
+            "4": " Very fidgety/restless",
+            "5": " Extremely fidgety/restless"
+        },
+        "LevelsOrig": {
+            "0": "Not fidgety/restless at all",
+            "1": " Slightly fidgety/restless",
+            "2": " Moderately fidgety/restless",
+            "3": " Very fidgety/restless",
+            "4": " Extremely fidgety/restless"
+        }
+    },
+    "crisis_mood_states_post_focus": {
+        "Description": "… how well were you able to concentrate or focus?",
+        "Levels": {
+            "1": "Very focused/attentive",
+            "2": " Moderately focused/ attentive",
+            "3": " Neutral",
+            "4": " Moderately unfocused/distracted",
+            "5": " Very unfocused/distracted"
+        },
+        "LevelsOrig": {
+            "0": "Very focused/attentive",
+            "1": " Moderately focused/ attentive",
+            "2": " Neutral",
+            "3": " Moderately unfocused/distracted",
+            "4": " Very unfocused/distracted"
+        }
+    },
+    "crisis_mood_states_post_happy_vs_sad": {
+        "Description": "… how happy versus sad were you?",
+        "Levels": {
+            "1": "Vert sad/depressed/unhappy",
+            "2": " Moderately sad/depressed/unhappy",
+            "3": " Neutral",
+            "4": " Moderately happy/cheerful",
+            "5": " Very happy/cheerful "
+        },
+        "LevelsOrig": {
+            "0": "Vert sad/depressed/unhappy",
+            "1": " Moderately sad/depressed/unhappy",
+            "2": " Neutral",
+            "3": " Moderately happy/cheerful",
+            "4": " Very happy/cheerful "
+        }
+    },
+    "crisis_mood_states_post_irritability": {
+        "Description": "… how irritable or easily angered were you?",
+        "Levels": {
+            "1": "Not irritable or easily angered at all",
+            "2": " Slightly irritable or easily angered",
+            "3": " Moderately irritable or easily angered",
+            "4": " Very irritable or easily angered",
+            "5": " Extremely irritable or easily angered"
+        },
+        "LevelsOrig": {
+            "0": "Not irritable or easily angered at all",
+            "1": " Slightly irritable or easily angered",
+            "2": " Moderately irritable or easily angered",
+            "3": " Very irritable or easily angered",
+            "4": " Extremely irritable or easily angered"
+        }
+    },
+    "crisis_mood_states_post_loneliness": {
+        "Description": "… how lonely were you?",
+        "Levels": {
+            "1": "Not lonely at all",
+            "2": " Slightly loneley",
+            "3": " Moderately loneley",
+            "4": " Very lonely",
+            "5": " Extremely lonely"
+        },
+        "LevelsOrig": {
+            "0": "Not lonely at all",
+            "1": " Slightly loneley",
+            "2": " Moderately loneley",
+            "3": " Very lonely",
+            "4": " Extremely lonely"
+        }
+    },
+    "crisis_mood_states_post_negative_thougths": {
+        "Description": "… to what extent did you have negative thoughts, thoughts about unpleasant experiences or things that made you feel bad?",
+        "Levels": {
+            "1": "Not at all",
+            "2": " Rarely",
+            "3": " Occasionally",
+            "4": " Often",
+            "5": " A lot of the time"
+        },
+        "LevelsOrig": {
+            "0": "Not at all",
+            "1": " Rarely",
+            "2": " Occasionally",
+            "3": " Often",
+            "4": " A lot of the time"
+        }
+    },
+    "crisis_mood_states_post_relaxed_vs_anxious": {
+        "Description": "… how relaxed versus anxious were you?",
+        "Levels": {
+            "1": "Very relaxed/calm",
+            "2": " Moderately relaxed/calm",
+            "3": " Neutral",
+            "4": " Moderately nervous/anxious",
+            "5": " Very nervous/anxious"
+        },
+        "LevelsOrig": {
+            "0": "Very relaxed/calm",
+            "1": " Moderately relaxed/calm",
+            "2": " Neutral",
+            "3": " Moderately nervous/anxious",
+            "4": " Very nervous/anxious"
+        }
+    },
+    "crisis_mood_states_post_worry": {
+        "Description": "… how worried were you generally?",
+        "Levels": {
+            "1": "Not worried at all",
+            "2": " Slightly worried",
+            "3": " Moderately worried",
+            "4": " Very worried",
+            "5": " Extremely worried"
+        },
+        "LevelsOrig": {
+            "0": "Not worried at all",
+            "1": " Slightly worried",
+            "2": " Moderately worried",
+            "3": " Very worried",
+            "4": " Extremely worried"
+        }
+    }
+}

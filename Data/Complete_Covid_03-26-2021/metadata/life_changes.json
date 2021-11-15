@@ -1,0 +1,309 @@
+{
+    "MeasurementToolMetadata": {
+        "Description": "crisis_questionnaire:",
+        "TermURL": ""
+    },
+    "crisis_covid_impact_job_loss": {
+        "Description": "Were you laid off from your job? ",
+        "Levels": {
+            "0": " No",
+            "1": "Yes"
+        }
+    },
+    "crisis_covid_impact_school_closed": {
+        "Description": "… if you attend school, has your school building been closed?",
+        "Levels": {
+            "0": "No",
+            "1": " Yes",
+            "n/a": " Not available "
+        },
+        "LevelsOrig": {
+            "0": "No",
+            "1": " Yes",
+            "2": " Not available "
+        }
+    },
+    "crisis_life_changes_covid_worries_hopefully_end": {
+        "Description": "How hopeful are you that the Coronavirus/COVID-19 crisis in your area will end soon?",
+        "Levels": {
+            "1": "Not at all",
+            "2": " Slightly",
+            "3": " Moderately",
+            "4": " Very",
+            "5": " Extremely"
+        },
+        "LevelsOrig": {
+            "0": "Not at all",
+            "1": " Slightly",
+            "2": " Moderately",
+            "3": " Very",
+            "4": " Extremely"
+        }
+    },
+    "crisis_life_changes_difficulty_distancing": {
+        "Description": "… how much difficulty have you had following the recommendations for keeping away from close contact with people?",
+        "Levels": {
+            "1": "None",
+            "2": " A little",
+            "3": " Moderate",
+            "4": " A lot ",
+            "5": " A great amount "
+        },
+        "LevelsOrig": {
+            "0": "None",
+            "1": " A little",
+            "2": " Moderate",
+            "3": " A lot ",
+            "4": " A great amount "
+        }
+    },
+    "crisis_life_changes_fam_relationship": {
+        "Description": "… has the quality of the relationships between you and members of your family changed? ",
+        "Levels": {
+            "1": "A lot worse",
+            "2": " A little worse",
+            "3": " About the same",
+            "4": " A little better",
+            "5": " A lot better"
+        },
+        "LevelsOrig": {
+            "0": "A lot worse",
+            "1": " A little worse",
+            "2": " About the same",
+            "3": " A little better",
+            "4": " A lot better"
+        }
+    },
+    "crisis_life_changes_financial_difficulty": {
+        "Description": "… to what degree have changes related to the Coronavirus/COVID-19 crisis in your area created financial problems for you or your family?",
+        "Levels": {
+            "1": "Not at all",
+            "2": " Slightly",
+            "3": " Moderately",
+            "4": " Very",
+            "5": " Extremely"
+        },
+        "LevelsOrig": {
+            "0": "Not at all",
+            "1": " Slightly",
+            "2": " Moderately",
+            "3": " Very",
+            "4": " Extremely"
+        }
+    },
+    "crisis_life_changes_food_insecurity": {
+        "Description": "… did you worry whether your food would run out because of a lack of money?",
+        "Levels": {
+            "0": " No",
+            "1": "Yes"
+        }
+    },
+    "crisis_life_changes_freq_outside_contacts": {
+        "Description": "… have your contacts with people outside of your home changed relative to before the Coronavirus/COVID-19 crisis in your area?",
+        "Levels": {
+            "1": "A lot less",
+            "2": " A little less",
+            "3": " About the same",
+            "4": " A little more",
+            "5": " A lot more "
+        },
+        "LevelsOrig": {
+            "0": "A lot less",
+            "1": " A little less",
+            "2": " About the same",
+            "3": " A little more",
+            "4": " A lot more "
+        }
+    },
+    "crisis_life_changes_friend_relationship": {
+        "Description": "… has the quality of your relationships with your friends changed?",
+        "Levels": {
+            "1": "A lot worse",
+            "2": " A little worse",
+            "3": " About the same",
+            "4": " A little better",
+            "5": " A lot better"
+        },
+        "LevelsOrig": {
+            "0": "A lot worse",
+            "1": " A little worse",
+            "2": " About the same",
+            "3": " A little better",
+            "4": " A lot better"
+        }
+    },
+    "crisis_life_changes_houing_instability": {
+        "Description": "… to what degree are you concerned about the stability of your living situation?",
+        "Levels": {
+            "0": "Not at all",
+            "1": " Slightly",
+            "2": " Moderately",
+            "3": " Very",
+            "4": " Extremely"
+        }
+    },
+    "crisis_life_changes_in_person_conversation": {
+        "Description": "… how many people, from outside of your household, have you had an in-person conversation with? ",
+        "Levels": {
+            "1": "0",
+            "2": "1-4",
+            "3": "above 4"
+        }
+    },
+    "crisis_life_changes_stress_cancellation": {
+        "Description": "… how much has cancellation of important events (such as graduation, prom, vacation, etc.) in your life been difficult for you?",
+        "Levels": {
+            "1": "Not at all",
+            "2": " Slightly",
+            "3": " Moderately",
+            "4": " Very",
+            "5": " Extremely"
+        },
+        "LevelsOrig": {
+            "0": "Not at all",
+            "1": " Slightly",
+            "2": " Moderately",
+            "3": " Very",
+            "4": " Extremely"
+        }
+    },
+    "crisis_life_changes_stress_family_change": {
+        "Description": "… how stressful have these changes in family contacts been for you?",
+        "Levels": {
+            "1": "Not at all",
+            "2": " Slightly",
+            "3": " Moderately",
+            "4": " Very",
+            "5": " Extremely"
+        },
+        "LevelsOrig": {
+            "0": "Not at all",
+            "1": " Slightly",
+            "2": " Moderately",
+            "3": " Very",
+            "4": " Extremely"
+        }
+    },
+    "crisis_life_changes_stress_friend_change": {
+        "Description": "… how stressful have these changes in social contacts been for you?",
+        "Levels": {
+            "1": "Not at all",
+            "2": " Slightly",
+            "3": " Moderately",
+            "4": " Very",
+            "5": " Extremely"
+        },
+        "LevelsOrig": {
+            "0": "Not at all",
+            "1": " Slightly",
+            "2": " Moderately",
+            "3": " Very",
+            "4": " Extremely"
+        }
+    },
+    "crisis_life_changes_stress_stay_at_home": {
+        "Description": "… how stressful have the restrictions on leaving home been for you?",
+        "Levels": {
+            "1": "Not at all",
+            "2": " Slighlty",
+            "3": " Moderately",
+            "4": " Very",
+            "5": " Extremely"
+        },
+        "LevelsOrig": {
+            "0": "Not at all",
+            "1": " Slighlty",
+            "2": " Moderately",
+            "3": " Very",
+            "4": " Extremely"
+        }
+    },
+    "crisis_life_changes_survey__covid_10_options": {
+        "Description": "Are there assignments for you to complete? ",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "crisis_life_changes_survey__covid_11_options": {
+        "Description": "Are you able to receive meals from the school? ",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "crisis_life_changes_survey__covid_13_options": {
+        "Description": "… if you had a job prior to Coronavirus/COVID-19, are you still working?",
+        "Levels": {
+            "0": "No",
+            "1": " Yes",
+            "2": " Not available "
+        }
+    },
+    "crisis_life_changes_survey__covid_15_options": {
+        "Description": "Are you still going to your workplace? ",
+        "Levels": {
+            "0": " No",
+            "1": "Yes"
+        }
+    },
+    "crisis_life_changes_survey__covid_16_options": {
+        "Description": "Are you teleworking or working from home? ",
+        "Levels": {
+            "0": " No",
+            "1": "Yes"
+        }
+    },
+    "crisis_life_changes_survey__covid_19_options": {
+        "Description": "Do you lose your job? ",
+        "Levels": {
+            "0": " No",
+            "1": "Yes"
+        }
+    },
+    "crisis_life_changes_survey__covid_5_options": {
+        "Description": "Are classes in session ? ",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "crisis_life_changes_survey__covid_6_options": {
+        "Description": "Are you atteding classes in-person? ",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "crisis_life_changes_survey__covid_8_options": {
+        "Description": "Have classes resumed online? ",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "crisis_life_changes_survey__covid_9_options": {
+        "Description": "Do you have easy access to the internet and a computer?",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "crisis_life_changes_time_outside_home": {
+        "Description": "… how much time have you spent going outside of the home (e.g., going to stores, parks, etc.)?",
+        "Levels": {
+            "1": "Not at all",
+            "2": " 1-2 days per week",
+            "3": " A few days per week",
+            "4": " Several days per week",
+            "5": " Every day"
+        },
+        "LevelsOrig": {
+            "0": "Not at all",
+            "1": " 1-2 days per week",
+            "2": " A few days per week",
+            "3": " Several days per week",
+            "4": " Every day"
+        }
+    }
+}

@@ -1,0 +1,584 @@
+{
+    "Age": {
+        "Description": "How old are you (in years)?",
+        "Levels": {}
+    },
+    "ArrestedChargedLifeCount": {
+        "Description": "How many times in your life have you been arrested and/or charged with illegal activities?",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5-10",
+            "6": ">10"
+        },
+        "LevelsOrig": {
+            "1": "0",
+            "2": "1",
+            "3": "2",
+            "4": "3",
+            "5": "4",
+            "6": "5-10",
+            "7": ">10"
+        }
+    },
+    "CaffienatedSodaCansPerDay": {
+        "Description": "On average, how many cans of caffeinated soda do you have each day?",
+        "Levels": {}
+    },
+    "CaffieneOtherSourcesDayMG": {
+        "Description": "What is your daily caffeine intake from other sources each day (in mg)?",
+        "Levels": {}
+    },
+    "CarDebt": {
+        "Description": "How much car-related debt do you have?",
+        "Levels": {
+            "1": "<$500",
+            "2": "$500-$2499",
+            "3": "$2500-$9999",
+            "4": "$10000-$24999",
+            "5": "$25000-$49999",
+            "6": "$50000-$99999",
+            "7": "$100000-$199999",
+            "8": ">$200000",
+            "n/a": " Prefer Not To Say"
+        },
+        "LevelsOrig": {
+            " 0": " Prefer Not To Say",
+            "1": "<$500",
+            "2": "$500-$2499",
+            "3": "$2500-$9999",
+            "4": "$10000-$24999",
+            "5": "$25000-$49999",
+            "6": "$50000-$99999",
+            "7": "$100000-$199999",
+            "8": ">$200000"
+        }
+    },
+    "ChildrenNumber": {
+        "Description": "How many children do you have?",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5-10",
+            "6": ">10"
+        },
+        "LevelsOrig": {
+            "1": "0",
+            "2": "1",
+            "3": "2",
+            "4": "3",
+            "5": "4",
+            "6": "5-10",
+            "7": ">10"
+        }
+    },
+    "CoffeeCupsPerDay": {
+        "Description": "On average, how many cups of coffee do you have each day?",
+        "Levels": {}
+    },
+    "CreditCardDebt": {
+        "Description": "How much credit card debt do you have?",
+        "Levels": {
+            "1": "<$500",
+            "2": "$500-$2499",
+            "3": "$2500-$9999",
+            "4": "$10000-$24999",
+            "5": "$25000-$49999",
+            "6": "$50000-$99999",
+            "7": "$100000-$199999",
+            "8": ">$200000",
+            "n/a": " Prefer Not To Say"
+        },
+        "LevelsOrig": {
+            " 0": " Prefer Not To Say",
+            "1": "<$500",
+            "2": "$500-$2499",
+            "3": "$2500-$9999",
+            "4": "$10000-$24999",
+            "5": "$25000-$49999",
+            "6": "$50000-$99999",
+            "7": "$100000-$199999",
+            "8": ">$200000"
+        }
+    },
+    "DivorceCount": {
+        "Description": "How many times have you been divorced?",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "More"
+        }
+    },
+    "EducationDebt": {
+        "Description": "How much education debt do you have?",
+        "Levels": {
+            "1": "<$500",
+            "2": "$500-$2499",
+            "3": "$2500-$9999",
+            "4": "$10000-$24999",
+            "5": "$25000-$49999",
+            "6": "$50000-$99999",
+            "7": "$100000-$199999",
+            "8": ">$200000",
+            "n/a": " Prefer Not To Say"
+        },
+        "LevelsOrig": {
+            " 0": " Prefer Not To Say",
+            "1": "<$500",
+            "2": "$500-$2499",
+            "3": "$2500-$9999",
+            "4": "$10000-$24999",
+            "5": "$25000-$49999",
+            "6": "$50000-$99999",
+            "7": "$100000-$199999",
+            "8": ">$200000"
+        }
+    },
+    "GamblingProblem": {
+        "Description": "Do you feel you have a problem with gambling?",
+        "Levels": {
+            "0": "no",
+            "1": " yes in the past but not now",
+            "2": " yes"
+        },
+        "Nominal": true
+    },
+    "HeightFeet": {
+        "Description": "Feet:",
+        "Levels": {}
+    },
+    "HeightInches": {
+        "Description": "Inches:",
+        "Levels": {}
+    },
+    "HighestEducation": {
+        "Description": "What is the highest level of education you have completed?",
+        "Levels": {
+            "1": "Did Not Complete High School",
+            "2": " High School/GED",
+            "3": " Some College",
+            "4": " Bachelor's Degree",
+            "5": " Master's Degree",
+            "6": " Advanced Graduate work or Ph.D"
+        }
+    },
+    "HispanicLatino": {
+        "Description": "Are you of Hispanic, Latino or Spanish origin?",
+        "Levels": {
+            "0": " No",
+            "1": "Yes"
+        },
+        "Nominal": true
+    },
+    "HouseholdIncome": {
+        "Description": "What is your household's annual income (in US dollars)?",
+        "Levels": {}
+    },
+    "LongestRelationshipMonths": {
+        "Description": "Months:",
+        "Levels": {}
+    },
+    "LongestRelationshipYears": {
+        "Description": "Years:",
+        "Levels": {}
+    },
+    "MeasurementToolMetadata": {
+        "Description": "Demographics",
+        "TermURL": ""
+    },
+    "MortgageDebt": {
+        "Description": "How much mortgage debt do you have?",
+        "Levels": {
+            "1": "<$500",
+            "2": "$500-$2499",
+            "3": "$2500-$9999",
+            "4": "$10000-$24999",
+            "5": "$25000-$49999",
+            "6": "$50000-$99999",
+            "7": "$100000-$199999",
+            "8": ">$200000",
+            "n/a": " Prefer Not To Say"
+        },
+        "LevelsOrig": {
+            " 0": " Prefer Not To Say",
+            "1": "<$500",
+            "2": "$500-$2499",
+            "3": "$2500-$9999",
+            "4": "$10000-$24999",
+            "5": "$25000-$49999",
+            "6": "$50000-$99999",
+            "7": "$100000-$199999",
+            "8": ">$200000"
+        }
+    },
+    "MotivationForParticipation": {
+        "Description": "What are your motivations for participating in this experiment?",
+        "Levels": {},
+        "Nominal": true
+    },
+    "MotivationOther": {
+        "Description": "If you have other motivations, please list them. ",
+        "Levels": {},
+        "Nominal": true
+    },
+    "OtherDebtAmount": {
+        "Description": "If you listed any other sources of debt, how much debt do you have from these other sources?",
+        "Levels": {
+            "1": "<$500",
+            "2": "$500-$2499",
+            "3": "$2500-$9999",
+            "4": "$10000-$24999",
+            "5": "$25000-$49999",
+            "6": "$50000-$99999",
+            "7": "$100000-$199999",
+            "8": ">$200000",
+            "n/a": " Prefer Not To Say"
+        },
+        "LevelsOrig": {
+            "0": " Prefer Not To Say",
+            "1": "<$500",
+            "2": "$500-$2499",
+            "3": "$2500-$9999",
+            "4": "$10000-$24999",
+            "5": "$25000-$49999",
+            "6": "$50000-$99999",
+            "7": "$100000-$199999",
+            "8": ">$200000"
+        }
+    },
+    "OtherDebtSources": {
+        "Description": "Please list any other sources of debt you have:",
+        "Levels": {},
+        "Nominal": true
+    },
+    "OtherRace": {
+        "Description": "If you chose 'Other' for racial  background how would you describe it?",
+        "Levels": {},
+        "Nominal": true
+    },
+    "Race": {
+        "Description": "What is your race?",
+        "Levels": {},
+        "Nominal": true
+    },
+    "RelationshipNumber": {
+        "Description": "How many romantic relationships have you had?",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5-10",
+            "6": ">10"
+        },
+        "LevelsOrig": {
+            "1": "0",
+            "2": "1",
+            "3": "2",
+            "4": "3",
+            "5": "4",
+            "6": "5-10",
+            "7": ">10"
+        }
+    },
+    "RelationshipStatus": {
+        "Description": "What is your relationship status?",
+        "Levels": {
+            "1": "Single",
+            "2": "Married",
+            "3": "In Committed Relationship"
+        },
+        "Nominal": true
+    },
+    "RentOwn": {
+        "Description": "What is your housing status?",
+        "Levels": {
+            "0": "own a home",
+            "1": "rent a home/apartment",
+            "2": "live with someone (no rent)",
+            "3": "residential/halfway house",
+            "4": "shelter",
+            "5": "no current home"
+        },
+        "LevelsOrig": {
+            "1": "own a home",
+            "2": "rent a home/apartment",
+            "3": "live with someone (no rent)",
+            "4": "residential/halfway house",
+            "5": "shelter",
+            "6": "no current home"
+        },
+        "Nominal": true
+    },
+    "RetirementAccount": {
+        "Description": "Do you have a retirement account?",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        },
+        "LevelsOrig": {
+            "1": "Yes",
+            "2": "No"
+        }
+    },
+    "RetirementPercentStocks": {
+        "Description": "If you do have a retirement account what percent is in stocks?",
+        "Levels": {
+            "1": "<10%",
+            "10": "90% or greater",
+            "2": "10-19%",
+            "3": "20-29%",
+            "4": "30-39%",
+            "5": "40-49%",
+            "6": "50-59%",
+            "7": "60-69%",
+            "8": "70-79%",
+            "9": "80-89%"
+        }
+    },
+    "Sex": {
+        "Description": "What is your gender?",
+        "Levels": {
+            "0": "Male",
+            "1": "female",
+            "2": "non-binary/third gender",
+            "3": " prefer not to answer"
+        },
+        "Nominal": true
+    },
+    "TeaCupsPerDay": {
+        "Description": "On average, how many cups of tea do you have each day?",
+        "Levels": {}
+    },
+    "TrafficAccidentsLifeCount": {
+        "Description": "How many traffic accidents have you been in over your life?",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5-10",
+            "6": ">10"
+        },
+        "LevelsOrig": {
+            "1": "0",
+            "2": "1",
+            "3": "2",
+            "4": "3",
+            "5": "4",
+            "6": "5-10",
+            "7": ">10"
+        }
+    },
+    "TrafficTicketsLastYearCount": {
+        "Description": "How many traffic tickets have you gotten in the last year?",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5-10",
+            "6": ">10"
+        },
+        "LevelsOrig": {
+            "1": "0",
+            "2": "1",
+            "3": "2",
+            "4": "3",
+            "5": "4",
+            "6": "5-10",
+            "7": ">10"
+        }
+    },
+    "WeightPounds": {
+        "Description": "How much do you weigh (in pounds)?",
+        "Levels": {}
+    },
+    "country": {
+        "Description": "In which country do you currently live? ",
+        "Levels": {}
+    },
+    "crisis_currentlyworking": {
+        "Description": "Are you currently working or in school?",
+        "Levels": {
+            "1": "Working for pay",
+            "2": " On leave",
+            "3": " Laid off or lost job",
+            "4": " Unemployed and looking for a job",
+            "5": " Retired",
+            "6": " Staying at home/ homemaker",
+            "7": " Disabled",
+            "8": " Enrolled in school/college/university"
+        }
+    },
+    "crisis_esssentialworkers": {
+        "Description": "Are any adults living in the home an ESSENTIAL WORKER (e.g., healthcare, delivery worker, store worker, security, building maintenance)?",
+        "Levels": {
+            "0": " No ",
+            "1": "Yes"
+        }
+    },
+    "crisis_healthinsurance": {
+        "Description": "Are you covered by health insurance?",
+        "Levels": {
+            "1": "Yes military",
+            "2": "  Yes employer-sponsored",
+            "3": " Yes individual",
+            "4": " Yes Medicare",
+            "5": " Yes Medicaid or CHIP",
+            "6": " Yes other",
+            "7": " No"
+        }
+    },
+    "crisis_householdpeople": {
+        "Description": "How many people currently live in your home (excluding yourself)? ",
+        "Levels": {}
+    },
+    "crisis_householdrelation": {
+        "Description": "Please specify the relationship to the people in your home (check all that apply): ",
+        "Levels": {},
+        "Nominal": true
+    },
+    "crisis_householdrooms": {
+        "Description": "How many rooms (total) are in your home? ",
+        "Levels": {}
+    },
+    "crisis_mentalhealth": {
+        "Description": "How would you rate your overall Mental/Emotional health before the Coronavirus/COVID-19 crisis in your area?",
+        "Levels": {
+            "1": " Poor ",
+            "2": " Fair",
+            "3": " Good",
+            "4": " Very Good",
+            "5": "Excellent"
+        }
+    },
+    "crisis_military": {
+        "Description": "Have you served in the military?",
+        "Levels": {
+            "0": " No",
+            "1": "Yes"
+        }
+    },
+    "crisis_moneysupport": {
+        "Description": "In the 3 months prior to the Coronavirus/COVID-19 crisis in your area, did you or your family receive money from government assistance programs like welfare, Aid to Families with Dependent Children, General Assistance, or Temporary Assistance for Needy Families?",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "crisis_occupation": {
+        "Description": "What is your occupation?",
+        "Levels": {}
+    },
+    "crisis_physicalhealth": {
+        "Description": "How would you rate your overall physical health?",
+        "Levels": {
+            "1": " Poor ",
+            "2": " Fair",
+            "3": " Good",
+            "4": " Very Good",
+            "5": "Excellent"
+        }
+    },
+    "crisis_urbanicity": {
+        "Description": "Which best describes the area in which you live?",
+        "Levels": {
+            "1": "Large city",
+            "2": " Suburbs of a large city",
+            "3": " Small city",
+            "4": " Town or village",
+            "5": " Rural area"
+        }
+    },
+    "crisis_workersforcovid": {
+        "Description": "Are they a FIRST RESPONDER, HEALTHCARE PROVIDER or OTHER WORKER in a facility treating COVID-19?",
+        "Levels": {
+            "0": " No",
+            "1": "Yes"
+        }
+    },
+    "crisis_workershome": {
+        "Description": "Do they come home each day?",
+        "Levels": {
+            "1": " No separated due to other reasons ",
+            "2": " No separated due to COVID-19",
+            "3": "Yes"
+        }
+    },
+    "other_state": {
+        "Description": "If you responded “other” to the above question, please describe:",
+        "Levels": {},
+        "Nominal": true
+    },
+    "state": {
+        "Description": "State/Province/Region:",
+        "Levels": {
+            "1": "Alabama",
+            "10": " Georgia",
+            "11": " Hawaii",
+            "12": " Idaho",
+            "13": " Illinois",
+            "14": " Indiana",
+            "15": " Iowa",
+            "16": " Kansas",
+            "17": " Kentucky",
+            "18": " Louisiana",
+            "19": " Maine",
+            "2": " Alaska",
+            "20": " Maryland",
+            "21": " Massachusetts",
+            "22": " Michigan",
+            "23": " Minnesota",
+            "24": " Mississippi",
+            "25": " Missouri",
+            "26": " Montana",
+            "27": " Nebraska",
+            "28": " Nevada",
+            "29": " New Hampshire",
+            "3": " Arizona",
+            "30": " New Jersey",
+            "31": " New Mexico",
+            "32": " New York",
+            "33": " North Carolina",
+            "34": " North Dakota",
+            "35": " Ohio",
+            "36": " Oklahoma",
+            "37": " Oregon",
+            "38": " Pennsylvania",
+            "39": " Rhode Island",
+            "4": " Arkansas",
+            "40": " South Carolina",
+            "41": " South Dakota",
+            "42": " Tennessee",
+            "43": " Texas",
+            "44": " Utah",
+            "45": " Vermont",
+            "46": " Virginia",
+            "47": " Washington",
+            "48": " West Virginia",
+            "49": " Wisconsin",
+            "5": " California",
+            "50": " Wyoming",
+            "51": " Other",
+            "6": " Colorado",
+            "7": " Connecticut",
+            "8": " Delaware",
+            "9": " Florida"
+        },
+        "Nominal": true
+    }
+}
